@@ -112,8 +112,12 @@
         }
         else{
 
-        localStorage.setItem('name', name?.value?.trim() ?? null)
-        transitionToPage('./story.html')
+        localStorage.setItem('name', name?.value?.trim())
+
+        setTimeout(() => {
+
+            transitionToPage('./story.html')
+        },200)
         }
     }
 </script>
