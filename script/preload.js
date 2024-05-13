@@ -4,7 +4,7 @@ var linkElement = document.createElement("link");
 
 for (let i = 3; i <= 41; i++) {
   linkElement.rel = "preload";
-  linkElement.href = "./assets/scenes/scene" + i + (i === 13 ? ".gif" : ".png");
+  linkElement.href = "./assets/scenes/scene" + i + (i === 13 ? ".GIF" : ".png");
   linkElement.as = "image";
   linkElement.type = "image/" + (i === 13 ? "gif" : "png");
   document.head.appendChild(linkElement);

@@ -584,6 +584,7 @@
  
 
             //transition
+            if(!changeImage)
             text_container.style.opacity = 1
   
         },300+500*changeImage)
@@ -591,7 +592,7 @@
                 //image transition
                 setTimeout(() => {
             if(changeImage){
-                image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".gif" : ".png")
+                image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png")
                 // image.style.filter = null
             }
         }, 500)
