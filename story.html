@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/story.css">
     <link href='https://fonts.googleapis.com/css?family=Mitr' rel='stylesheet'>
     <script type="text/javascript" src="./script/common.js"></script>
-    <script type="text/javascript" src="./script/index.js"></script>
+    <script type="text/javascript" src="./script/master.js"></script>
     <script type="text/javascript" src="./script/preload.js"></script>
 
     <title>Before The Bloom</title>
@@ -68,7 +68,7 @@
                 </div>
                 <div id="tab13" class="tab-content align-bottom">
                     <div class="archievement-container">
-                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                         <div class="archievement-name">
                             <p class="archievement-text">Achievement Unlocked</p>
                             <p class="archievement-text text-brown">การเริ่มต้นการเดินทาง</p>
@@ -132,14 +132,14 @@
                 <div id="tab25" class="tab-content align-bottom">
                     <div class="archievement-horizontal">
                         <div class="archievement-container2">
-                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                             <div class="archievement-name">
                                 <p class="archievement-text">Achievement Unlocked</p>
                                 <p class="archievement-text text-brown">เรียนรู้ที่จะอยู่กับความกลัว</p>
                             </div>
                         </div>
                         <div class="archievement-container2">
-                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                             <div class="archievement-name">
                                 <p class="archievement-text">Achievement Unlocked</p>
                                 <p class="archievement-text text-brown">เรียนรู้ที่จะล้มแล้วลุกให้เป็น</p>
@@ -176,14 +176,14 @@
                 <div id="tab32" class="tab-content align-bottom">
                     <div class="archievement-horizontal">
                         <div class="archievement-container2">
-                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                             <div class="archievement-name">
                                 <p class="archievement-text">Achievement Unlocked</p>
                                 <p class="archievement-text text-brown">มิตรภาพระหว่างทาง</p>
                             </div>
                         </div>
                         <div class="archievement-container2">
-                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                             <div class="archievement-name">
                                 <p class="archievement-text">Achievement Unlocked</p>
                                 <p class="archievement-text text-brown">เรียนรู้ที่จะหยุดพัก</p>
@@ -226,7 +226,7 @@
                 </div>
                 <div id="tab39" class="tab-content align-bottom">
                     <div class="archievement-container">
-                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                         <div class="archievement-name">
                             <p class="archievement-text">Achievement Unlocked</p>
                             <p class="archievement-text text-brown">ความมุ่งมั่น</p>
@@ -313,7 +313,7 @@
                 </div>
                 <div id="tab57" class="tab-content align-bottom">
                     <div class="archievement-container">
-                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                         <div class="archievement-name">
                             <p class="archievement-text">Achievement Unlocked</p>
                             <p class="archievement-text text-brown">การถอยหนีความกลัว</p>
@@ -343,7 +343,7 @@
                 </div>
                 <div id="tab63" class="tab-content align-top">
                     <div class="archievement-container">
-                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                         <div class="archievement-name">
                             <p class="archievement-text">Achievement Unlocked</p>
                             <p class="archievement-text text-brown">เผชิญหน้ากับความกลัว</p>
@@ -450,7 +450,7 @@
                 </div>
                 <div id="tab85" class="tab-content align-bottom">
                     <div class="archievement-container">
-                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.png" alt="">
                         <div class="archievement-name">
                             <p class="archievement-text">Achievement Unlocked</p>
                             <p class="archievement-text text-brown">รับรู้คุณค่าของตัวเอง</p>
@@ -612,7 +612,7 @@
     body.addEventListener("keydown", function (key){
         if(key.keyCode === 39 && !preventScene.includes(curTab)){
             nextTab(1)
-        } else if(key.keyCode === 37 && !preventScene.includes(curTab)){
+        } else if(key.keyCode === 37 && !preventScene.includes(curTab-1)){
             nextTab(-1)
         }
     })

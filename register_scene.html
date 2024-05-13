@@ -8,7 +8,6 @@
     <link rel="preload" href="./assets/object/water-plant.PNG" as="image" type="image/png">
     <link rel="preload" href="./assets/scenes/scene2.gif" as="image" type="image/gif">
     <link href='https://fonts.googleapis.com/css?family=Mitr' rel='stylesheet'>
-    <link rel="prerender" href="./register_scene.html">
     <script type="text/javascript" src="./script/common.js"></script>
     <title>Before The Bloom</title>
 </head>
@@ -108,12 +107,13 @@
 
     function nextPage(){
         let name = document.getElementById("name_input")
-        if(!name?.value || name?.value === ""){
+        if(!name?.value || name?.value === "" || name?.value == null){
             alert('กรุณากรอกชื่อนักเดินทางของคุณ')
         }
         else{
+            let nameSave = `${name?.value?.trim()}`
 
-        localStorage.setItem('name', name?.value?.trim())
+        localStorage.setItem('name', nameSave)
 
         setTimeout(() => {
 

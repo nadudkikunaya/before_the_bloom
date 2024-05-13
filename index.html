@@ -5,31 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="preload" href="./assets/scenes/scene1.png" as="image" type="image/png">
-    <link rel="prefetch" href="./assets/object/water-plant.PNG" as="image" type="image/png">
-    <link rel="prefetch" href="./assets/scenes/scene2.gif" as="image" type="image/gif">
-    <link href="https://db.onlinewebfonts.com/c/6677a36541e322426d7d530f16424537?family=Silk+Flower+Demo" rel="stylesheet">
-    <script type="text/javascript" src="./script/common.js"></script>
-    <script type="text/javascript" src="./script/index.js"></script>
     <title>Before The Bloom</title>
+    <script type="text/javascript" src="./script/common.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="title-container">
-            <p class="title">BEFORE THE BLOOM2</p>
-            <p class="stroke1">BEFORE THE BLOOM</p>
-            <p class="subtitle">ก่อนจะถึงฤดูผลิบาน</p>
-            <p class="stroke2">ก่อนจะถึงฤดูผลิบาน</p>
-        </div>
-            <img src="./assets/scenes/scene1.png" class="custom-aspect-ratio" alt="">
-        <div class="button-container">
-            <button class="button-custom" onclick="buttonScene1()">เข้าสู่เนื้อเรื่อง</button>
-        </div>
+        <iframe  id="myframe" class="master" src="./master.html" title="description"></iframe>
     </div>
-    
-    
+    <audio autoplay controls class="audio" id="audio">
+        <source id="sound_src" src="./assets/sounds/sound1.mp4" type="audio/mp4">
+    </audio>
 </body>
 </html>
 
+<script>
+    // function frameHandler () {
+    //     console.log('work');
+    // }
+
+    // let iframe = document.getElementById('myframe');
+    // console.log(iframe);
+
+    let sound = 1
+    window.addEventListener('message', function(event) {
+
+            // Handle the received data
+            if(event?.data === "next_sound"){
+                let src = document.getElementById('sound_src')
+                sound++;
+                src.src = "./assets/sounds/sound"+ sound +".mp4"
+
+                let audio = document.getElementById('audio')
+                audio.load()
+                audio.play()
+            }
+        });
 
 
+</script>
