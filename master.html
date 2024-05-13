@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/master.css">
+    <title>Before The Bloom</title>
+    <script type="text/javascript" src="./script/common.js"></script>
+</head>
+<body>
+    <div class="container">
+        <iframe  id="myframe" class="master" src="./index.html" title="description"></iframe>
+    </div>
+    <audio autoplay controls class="audio" id="audio">
+        <source id="sound_src" src="./assets/sounds/sound1.mp4" type="audio/mp4">
+    </audio>
+</body>
+</html>
+
+<script>
+    // function frameHandler () {
+    //     console.log('work');
+    // }
+
+    // let iframe = document.getElementById('myframe');
+    // console.log(iframe);
+
+    let sound = 1
+    window.addEventListener('message', function(event) {
+
+            // Handle the received data
+            if(event?.data === "next_sound"){
+                let src = document.getElementById('sound_src')
+                sound++;
+                src.src = "./assets/sounds/sound"+ sound +".mp4"
+
+                let audio = document.getElementById('audio')
+                audio.load()
+                audio.play()
+            }
+        });
+
+
+</script>

@@ -1,0 +1,71 @@
+.title-container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* background-color: white; */
+    
+}
+
+
+
+.title {
+    font-family: 'Silk Flower Demo';
+    line-height: normal;
+    font-size: calc(7vw);
+    font-weight: 600;
+    margin-top: calc(5vh/5vw) ;
+    margin-bottom: 0;
+    background: -webkit-linear-gradient(rgba(255, 255, 255,1),rgba(255, 255, 255,1),rgba(183, 79, 192,0.2));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 10;
+
+
+}
+
+.stroke1 {
+    position: absolute;
+    font-family: 'Silk Flower Demo';
+    line-height: normal;
+    font-size: calc(7vw);
+    /* font-weight: 600; */
+    margin-left: 15.9vw;
+    margin-top: -7.0vw;
+    color: white;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.08vw white; /* width and color */
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.stroke2 {
+    position: absolute;
+    line-height: 0;
+    font-size: calc(4vw);
+    line-height: normal;
+    margin-top: 0;
+    font-family: 'FC Hype';
+    color: white;
+    /* font-weight: 600; */
+    margin-left: 34.1vw;
+    margin-top: -7.7vw;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.08vw white; /* width and color */
+    z-index: 2;
+    opacity: 0.4;
+}
+
+.subtitle{
+    line-height: 0;
+    font-size: calc(4vw);
+    line-height: normal;
+    margin-top: 0;
+    font-family: 'FC Hype';
+    color: white;
+    z-index: 5;
+}
+
+
+

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/story.css">
+    <link href='https://fonts.googleapis.com/css?family=Mitr' rel='stylesheet'>
+    <script type="text/javascript" src="./script/common.js"></script>
+    <script type="text/javascript" src="./script/index.js"></script>
+    <script type="text/javascript" src="./script/preload.js"></script>
+
+    <title>Before The Bloom</title>
+</head>
+<body class="change-cursor">
+    <div class="container">
+        <div class="text-container">
+            <div class="tab">
+                <div id="tab1" class="tab-content"></div>
+                <div id="tab2" class="tab-content align-middle">
+                    <p class="text">ณ เมืองพืชแห่งหนึ่ง</p>
+                </div>
+                <div id="tab3" class="tab-content align-middle">
+                    <p class="text">ที่เมืองนี้ผู้คนต่างมีเป้าหมายที่จะเป็นพืชพิเศษ</p>
+                    <p class="text">นั่นเป็นสิ่งที่เล่าขานกันเรื่อยมาแม้จะไม่มีใครรู้ที่มาที่แน่ชัด</p>
+                </div>
+                <div id="tab4" class="tab-content align-middle">
+                    <p class="text">แต่นั่นเป็นสิ่งที่ปลูกฝังชาวเมืองมาโดยตลอดว่า</p>
+                    <p class="text">หากจะเป็นพืชที่ยิ่งใหญ่และประสบความสำเร็จได้</p>
+                    <p class="text">พืชตนนั้นจะต้องเป็นพืชพิเศษ </p>
+                </div>
+                <div id="tab5" class="tab-content align-bottom">
+                    <p class="text">ซึ่งการจะเป็นพืชพิเศษนั้นมาจากการที่พืชตนหนึ่งได้รับแสงศักดิ์สิทธิ์</p>
+                </div>
+                <div id="tab6" class="tab-content align-bottom">
+                    <p class="text">แต่การที่จะได้รับแสงศักดิ์สิทธิ์ จะต้องเดินทางไปยังจุดที่ลึกที่สุดของป่าต้องมนต์</p>
+                    <p class="text">เพราะที่จุดลึกที่สุดของป่านั้นจะมีแสงศักดิ์สิทธิ์อยู่ที่นั่น</p>
+                </div>
+                <div id="tab7" class="tab-content align-bottom">
+                    <p class="text">แต่เส้นทางในป่าต้องมนต์นั้นก็มีอุปสรรคมากมาย</p>
+                    <p class="text">ที่ทำให้ไม่ใช่ทุกคนจะสามารถเป็นพืชพิเศษกันได้ง่าย ๆ</p>
+                </div>
+                <div id="tab8" class="tab-content align-bottom">
+                    <p class="text">พืชตนหนึ่งที่อาศัยอยู่ในเมืองพืชแห่งนั้น</p>
+                    <p class="text">เขาคือพืชที่ก็ได้ฟังเรื่องราวที่เล่าขานนั้นมาตั้งแต่เล็กจนโต</p>
+                </div>
+                <div id="tab9" class="tab-content align-bottom">
+                    <p class="text">รวมถึงได้เห็นพืชพิเศษที่ได้รับการยกย่องและชื่นชมจากพืชตนอื่นมากมาย</p>
+                    <p class="text">เขาเองจึงมีเป้าหมายที่อยากจะเป็นพืชพิเศษเช่นกัน</p>
+                </div>
+                <div id="tab10" class="tab-content align-middle">
+                    <p class="text">แล้ววันหนึ่ง หลังจากที่&lt;&gt;ได้เตรียมความพร้อม</p>
+                    <p class="text">เพื่อการเดินทางนี้มาอย่างเนิ่นนาน</p>
+                    <p class="text">ก็ได้ตัดสินใจออกเดินทางไปยังป่าต้องมนต์</p>
+                </div>
+                <div id="tab11" class="tab-content align-bottom">
+                    <p class="text">แม้ไม่รู้ว่าเส้นทางข้างหน้าจะมีอะไรรออยู่</p>
+                    <p class="text">แต่&lt;&gt;ก็ตั้งตารอคอยวันที่เขาจะได้ออกเดินทาง</p>
+                </div>
+                <div id="tab12" class="tab-content align-middle">
+                    <div id="question-set-1" class="question-set">
+                        <p class="question">คุณอยากให้การเดินทางในครั้งนี้เป็นอย่างไร</p>
+                        <p value=2 class="choice">เป็นการเดินทางที่แสนสนุกและน่าตื่นเต้น</p>
+                        <p value=-1 class="choice">เป็นการเดินทางที่มีอุปสรรค สิ่งกีดขวางมากมายรออยู่</p>
+                        <p value=1 class="choice">เป็นการเดินทางที่ผ่อนคลาย ไม่เคร่งเครียด</p>
+                        <p value=0 class="choice">เป็นการเดินทางที่ไม่รู้ว่าข้างหน้าจะมีอะไรรออยู่</p>
+                    </div>
+                </div>
+                <div id="tab13" class="tab-content align-bottom">
+                    <div class="archievement-container">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <div class="archievement-name">
+                            <p class="archievement-text">Achievement Unlocked</p>
+                            <p class="archievement-text text-brown">การเริ่มต้นการเดินทาง</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab14" class="tab-content align-bottom">
+                    <p class="text">เมื่อ&lt;&gt;เริ่มต้นการเดินทาง เส้นทางนั้นดูงดงามและสดใส ไม่รู้ว่าด้วยความรู้สึกที่แรงกล้า</p>
+                    <p class="text">ความต้องการ หรือความใฝ่ฝันที่ยังชัดเจนอยู่หรือเปล่าที่ทำให้เป็นเช่นนั้น</p>
+                </div>
+                <div id="tab15" class="tab-content align-bottom">
+                    <p class="text">การเดินทางในครั้งนี้ให้ความรู้สึกที่วิเศษมาก</p>
+                </div>
+                <div id="tab16" class="tab-content align-bottom">
+                    <p class="text">หากไม่ได้เริ่มการเดินทางก็คงไม่ได้เห็นวิวที่งดงามและความรู้สึกที่ประทับใจเช่นนี้สักที</p>
+                </div>
+                <div id="tab17" class="tab-content align-middle">
+                    <div id="question-set-2" class="question-set">
+                        <p class="question">คุณคิดว่าอะไรคืออุปสรรคที่ผ่านไปได้ยากที่สุด</p>
+                        <p value=-1 class="choice">ช่วงเริ่มต้นการเดินทาง</p>
+                        <p value=0 class="choice">อุปสรรคและเส้นทางระหว่างทาง</p>
+                        <p value=2 class="choice">การเผชิญหน้ากับความกลัว</p>
+                        <p value=1 class="choice">การเปรียบเทียบตัวเองกับคนอื่น</p>
+                    </div>
+                </div>
+                <div id="tab18" class="tab-content align-middle">
+                    <p class="text">แม้การเดินทางของ&lt;&gt;จะไม่ได้ราบเรียบ</p>
+                    <p class="text">ทั้งการพบเจอกับเส้นทางที่ยากลำบาก</p>
+                    <p class="text">และการทำพลาดนับหลายหน</p>
+                </div>
+                <div id="tab19" class="tab-content align-middle">
+                    <p class="text">จนทำให้&lt;&gt;ได้รับบาดเจ็บและมีรอยแผลมาบ้าง</p>
+                    <p class="text">แต่&lt;&gt;ไม่คิดยอมแพ้ง่าย ๆ</p>
+                    <p class="text">และคิดว่าเขาจะพยายามทำให้ดีขึ้นในครั้งต่อไป</p>
+                </div>
+                <div id="tab20" class="tab-content align-middle">
+                    <p class="text">แม้จะคิดได้แบบนั้น</p>
+                    <p class="text">แต่ในใจของ&lt;&gt;ก็นึกถึงเพื่อนที่เมืองพืชตนอื่น ๆ</p>
+                </div>
+                <div id="tab21" class="tab-content align-middle">
+                    <p class="text">บางตนสามารถปีนป่ายเถาวัลย์ได้อย่างคล่องแคล่ว บางตนก็สามารถขุดมุดดินได้</p>
+                    <p class="text">ทำให้ทั้งสองนั้นเดินทางได้รวดเร็วมากกว่า</p>
+                </div>
+                <div id="tab22" class="tab-content align-middle">
+                    <p class="text">เมื่อเทียบกับ&lt;&gt;ที่เป็นเพียงพืชธรรมดา ที่ทำได้เพียงเดินดินปกติ</p>
+                    <p class="text">ไม่มีความสามารถอะไรที่พิเศษหรือโดดเด่นเหมือนกับพืชตนอื่น</p>
+                </div>
+                <div id="tab23" class="tab-content align-middle">
+                    <div id="question-set-3" class="question-set">
+                        <p class="question">ตอนนี้ คุณคิดว่าคุณสามารถทำตามเป้าหมายของตัวเองที่วางไว้ได้ไหม</p>
+                        <p value=2 class="choice">ได้อย่างแน่นอน</p>
+                        <p value=1 class="choice">น่าจะได้</p>
+                        <p value=0 class="choice">ไม่แน่ใจเลย</p>
+                        <p value=-1 class="choice">ไม่น่าจะได้</p>
+                    </div>
+                </div>
+                <div id="tab24" class="tab-content align-bottom">
+                    <p class="text">แม้ในใจของ&lt;&gt;จะมีความสงสัยและรู้สึกที่ไม่ดีอยู่บ้าง</p>
+                    <p class="text">แต่&lt;&gt;ก็มุ่งหน้าออกเดินทางต่อสู่เส้นทางที่เขาวาดฝันไว้</p>
+                </div>
+                <div id="tab25" class="tab-content align-bottom">
+                    <div class="archievement-horizontal">
+                        <div class="archievement-container2">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <div class="archievement-name">
+                                <p class="archievement-text">Achievement Unlocked</p>
+                                <p class="archievement-text text-brown">เรียนรู้ที่จะอยู่กับความกลัว</p>
+                            </div>
+                        </div>
+                        <div class="archievement-container2">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <div class="archievement-name">
+                                <p class="archievement-text">Achievement Unlocked</p>
+                                <p class="archievement-text text-brown">เรียนรู้ที่จะล้มแล้วลุกให้เป็น</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab26" class="tab-content align-top">
+                    <p class="text">เมื่อเดินทางต่อ&lt;&gt;ได้พบกับผีเสื้อยักษ์ตัวหนึ่งนอนบาดเจ็บอยู่</p>
+                    <p class="text">&lt;&gt;จึงตัดสินใจเข้าไปช่วยผีเสื้อนั้นไว้</p>
+                </div>
+                <div id="tab27" class="tab-content align-top">
+                    <p class="text">จากนั้นผีเสื้อก็กลับมามีสภาพที่ดีขึ้น</p>
+                    <p class="text">แต่&lt;&gt;พบว่าตัวเองนั้นเริ่มเหนื่อยล้าจากการเดินทางที่แสนยาวนาน</p>
+                </div>
+                <div id="tab28" class="tab-content align-top">
+                    <p class="text">ผีเสื้อจึงชวนให้&lt;&gt;หยุดพักผ่อนใต้เงาร่มไม้ด้วยกันก่อนที่จะเดินทางไปต่อ</p>
+                </div>
+                <div id="tab29" class="tab-content align-middle">
+                    <div id="rest1" class="question-set">
+                        <p class="choice">กดเพื่อพักผ่อนชั่วขณะระหว่างทาง</p>
+                    </div>
+                </div>
+                <div id="tab30" class="tab-content align-bottom">
+                    <div id="rest2" class="question-set">
+                        <p class="choice">กดเพื่อเดินทางต่อ</p>
+                    </div>
+                </div>
+                <div id="tab31" class="tab-content align-bottom">
+                    <p class="text">ทั้งสองได้พักผ่อนใต้ร่มเงาไม้</p>
+                    <p class="text">จากนั้นทั้งคู่ได้ทำความรู้จักกันมากขึ้น แบ่งปันเรื่องเล่าระหว่างทาง</p>
+                    <p class="text">จนเกิดเป็นความสัมพันธ์และมิตรภาพที่ดีต่อกัน</p>
+                </div>
+                <div id="tab32" class="tab-content align-bottom">
+                    <div class="archievement-horizontal">
+                        <div class="archievement-container2">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <div class="archievement-name">
+                                <p class="archievement-text">Achievement Unlocked</p>
+                                <p class="archievement-text text-brown">มิตรภาพระหว่างทาง</p>
+                            </div>
+                        </div>
+                        <div class="archievement-container2">
+                            <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                            <div class="archievement-name">
+                                <p class="archievement-text">Achievement Unlocked</p>
+                                <p class="archievement-text text-brown">เรียนรู้ที่จะหยุดพัก</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab33" class="tab-content align-top">
+                    <p class="text">&lt;&gt;ออกเดินทางต่อและเจอกับทางตัน</p>
+                    <p class="text">มีต้นไม้มากมายและหินขนาดใหญ่ขวางเส้นทางที่ต้องไปต่อ</p>
+                </div>
+                <div id="tab34" class="tab-content align-top">
+                    <p class="text">แต่&lt;&gt;ไม่ยอมแพ้ และหาทางที่จะไปต่อ แม้จะไม่เป็นไปตามแผนที่วางไว้ </p>
+                    <p class="text">แต่&lt;&gt;พยายามสำรวจเพื่อแก้ไขในสิ่งที่เกิดขึ้น</p>
+                </div>
+                <div id="tab35" class="tab-content">
+                    <div class="circle-container circle-position1">
+                        <div id="circle-1" class="circle"></div>
+                        <p class="text">ลองกดตรงนี้</p>
+                    </div>
+                    <div class="circle-container circle-position2">
+                        <div id="circle-2" class="circle"></div>
+                        <p class="text">ลองกดตรงนี้</p>
+                    </div>
+                    <div class="circle-container circle-position3">
+                        <div id="circle-3" class="circle"></div>
+                        <p class="text">ลองกดตรงนี้</p>
+                    </div>
+                </div>
+                <!-- circle decision-->
+                <div id="tab36" class="tab-content align-middle">
+                    <p class="text">หินมีขนาดใหญ่และหนักมากจึงไม่สามารถขยับได้เลย</p>
+                </div>
+                <div id="tab37" class="tab-content align-middle">
+                    <p class="text">ช่องระหว่างหินกับต้นไม้มีขนาดเล็กมาก ไม่สามารถผ่านได้</p>
+                </div>
+                <!-- circle decision-->
+                <div id="tab38" class="tab-content align-middle">
+                    <p class="text">มีหินวางเรียงเป็นขั้นอยู่ ทำให้สามารถปีนข้ามไปอีกฝั่งได้</p>
+                </div>
+                <div id="tab39" class="tab-content align-bottom">
+                    <div class="archievement-container">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <div class="archievement-name">
+                            <p class="archievement-text">Achievement Unlocked</p>
+                            <p class="archievement-text text-brown">ความมุ่งมั่น</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab40" class="tab-content align-bottom">
+                    <p class="text">เมื่อ&lt;&gt;เดินทางต่อลึกเข้าไปในป่ามากยิ่งขึ้น</p>
+                    <p class="text">เส้นทางในป่าเริ่มมืดขึ้นเรื่อย ๆ แสงสว่างเริ่มหายไป</p>
+                </div>
+                <div id="tab41" class="tab-content align-bottom">
+                    <p class="text">ตะเกียงไฟที่ใช้นำทางมาตลอดการเดินทางเริ่มติด ๆ ดับ ๆ ไม่มั่นคงเหมือนอย่างตอนแรก </p>
+                    <p class="text">เพราะเส้นทางที่ผ่านมาทำให้ตะเกียงไฟนั้นเสียหายทีละเล็กทีละน้อย</p>
+                </div>
+                <div id="tab42" class="tab-content align-bottom">
+                    <p class="text">ช่วงที่ตะเกียงไฟดับ &lt;&gt;รู้สึกถึงดวงตามากมายที่จ้องมองมา</p>
+                </div>
+                <div id="tab43" class="tab-content align-bottom">
+                    <p class="text">เป็นสายตาที่&lt;&gt;เหมือนเคยเห็นมาบ้างและบางสายตาก็ไม่คุ้นเคยเลย</p>
+                </div>
+                <div id="tab44" class="tab-content align-middle">
+                    <div id="question-set-4" class="question-set">
+                        <p class="question">สายตาเหล่านี้ทำให้คุณรู้สึกอย่างไร</p>
+                        <p value=2 class="choice">น่าตื่นเต้น</p>
+                        <p value=0 class="choice">กลัว</p>
+                        <p value=-1 class="choice">กดดัน</p>
+                        <p value=1 class="choice">ไม่รู้สึกอะไร</p>
+                    </div>
+                </div>
+                <div id="tab45" class="tab-content align-top">
+                    <p class="text">เมื่อเดินทางต่อ &lt;&gt;จึงรู้ว่ามีอะไรบางอย่างกำลังไต่ที่ตัวอยู่</p>
+                    <p class="text">ซึ่งสายตาเหล่านั้นที่มองมาคือแมลงกินพืช</p>
+                </div>
+                <div id="tab46" class="tab-content align-top">
+                    <p class="text">เป็นแมลงที่จะกัดกินพืชทีละเล็กทีละน้อย ทำให้บาดเจ็บและได้บาดแผลใหญ่ขึ้นเรื่อย ๆ</p>
+                    <p class="text">หากไม่รีบนำแมลงเหล่านี้ออกไปอาจทำให้เกิดสิ่งที่เลวร้ายกว่านี้เกิดขึ้น</p>
+                </div>
+                <div id="tab47" class="tab-content align-middle">
+                    <div id="help" class="question-set">
+                        <p class="choice">กดเพื่อตะโกนขอความช่วยเหลือ</p>
+                    </div>
+                </div>
+                <div id="tab48" class="tab-content align-top">
+                    <p class="text">ทันใดนั้นเอง ผีเสื้อที่&lt;&gt;เคยช่วยไว้ได้บินมา</p>
+                    <p class="text">และพา&lt;&gt;ออกไปจากสถานการณ์ที่ไม่พึงประสงค์ตรงนั้น</p>
+                </div>
+                <div id="tab49" class="tab-content align-top">
+                    <p class="text">ผีเสื้อพา&lt;&gt;ไปยังอีกที่หนึ่ง ที่ที่ไม่มีแมลงกินพืชอยู่</p>
+                    <p class="text">&lt;&gt;กล่าวขอบคุณผีเสื้อแล้วผีเสื้อก็บินจากไป</p>
+                </div>
+                <div id="tab50" class="tab-content align-middle">
+                    <p class="text">&lt;&gt;พบว่าตะเกียงไฟที่ถือมาตลอดการเดินทางได้หล่นหายไปในป่า</p>
+                    <p class="text">เหลือเพียงร่างกายตัวเองที่เต็มไปด้วยบาดแผลมากมาย</p>
+                </div>
+                <div id="tab51" class="tab-content align-middle">  
+                    <p class="text">แต่เนื่องจากเวลาที่เหลือน้อยลงทุกที</p>
+                    <p class="text">แสงอาทิตย์ที่เริ่มหายไปจากขอบฟ้า แสงสว่างที่น้อยลง</p>
+                    <p class="text">ทำให้&lt;&gt;ต้องรีบเดินทางต่อแม้ร่างกายแทบจะไปต่อไม่ไหว</p>
+                </div>
+                <div id="tab52" class="tab-content align-bottom">  
+                    <p class="text">&lt;&gt;เดินทางต่อเข้าไปในป่าที่ลึกขึ้น</p>
+                    <p class="text">แม้ตะเกียงไฟจะหล่นหายไปในป่าแล้ว แต่&lt;&gt;ยังมีไม้ขีดไฟติดตัวอยู่</p>
+                </div>
+                <div id="tab53" class="tab-content align-bottom">  
+                    <p class="text">แม้ไฟจากไม้ขีดไฟจะบอบบาง สว่างและมั่นคงน้อยกว่าตะเกียงไฟ</p>
+                    <p class="text">แต่นั่นเป็นเสมือนความหวังและความมั่นใจที่หลงเหลืออยู่ในตัว&lt;&gt; แม้จะเล็กน้อยแต่นั่นก็เป็นสิ่งที่ทำให้เขาไปต่อได้</p>
+                </div>
+                <div id="tab54" class="tab-content align-bottom">  
+                    <p class="text">เมื่อเข้าไปในป่าลึกมากยิ่งขึ้น &lt;&gt;เริ่มหลงทางเพราะแสงสว่างที่น้อยลง</p>
+                    <p class="text">และรู้สึกถึงเงาอะไรบางอย่างที่ไล่ตามมา</p>
+                </div>
+                <div id="tab55" class="tab-content align-bottom">  
+                    <p class="text">เป็นเงามืดที่ค่อย ๆ คลืบคลานไล่ตามมา ซึ่งดูน่ากลัวเป็นอย่างมาก</p>
+                    <p class="text">&lt;&gt;ในตอนนั้นทำได้แต่เพียงวิ่งหนีเงาที่ไล่ตามมา</p>
+                </div>
+                <div id="tab56" class="tab-content align-middle">
+                    <div id="question-set-5" class="question-set">
+                        <p class="question">เงาที่ไล่ตามมานั้นคือ</p>
+                        <p value=1 class="choice">ความกลัวที่จะทำไม่สำเร็จ</p>
+                        <p value=0 class="choice">ความกลัวที่จะไม่เป็นที่ยอมรับ</p>
+                        <p value=2 class="choice">ความกลัวที่จะเป็นคนที่เก่งไม่พอ</p>
+                        <p value=1 class="choice">ความกลัวที่จะผิดหวัง</p>
+                    </div>
+                </div>
+                <div id="tab57" class="tab-content align-bottom">
+                    <div class="archievement-container">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <div class="archievement-name">
+                            <p class="archievement-text">Achievement Unlocked</p>
+                            <p class="archievement-text text-brown">การถอยหนีความกลัว</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab58" class="tab-content align-top">
+                    <p class="text">&lt;&gt;วิ่งหนีจนกระทั่งรากของตัวเองได้ไปติดกับพื้นป่า รั้งไว้ไม่ให้เขาไปต่อได้</p>
+                    <p class="text">&lt;&gt;พยายามดิ้นรนให้รากของตัวเองหลุดออกมาจากตรงนั้น</p>
+                </div>
+                <div id="tab59" class="tab-content align-top">
+                    <p class="text">แต่ยิ่งดิ้นเท่าไหร่ก็ยิ่งเจ็บ &lt;&gt;ดิ้นอยู่สักพักและตั้งสติได้</p>
+                    <p class="text">แล้วจึงตัดสินใจเผชิญหน้ากับความกลัวหลังจากวิ่งหนีเงานั้นได้สักพัก</p>
+                </div>
+                <div id="tab60" class="tab-content align-middle">
+                    <div id="question-set-6" class="question-set">
+                        <p class="question">เงาเข้ามาใกล้ขึ้นเรื่อย ๆ คุณจะทำอย่างไรกับสิ่งที่เกิดขึ้น</p>
+                        <p value=-1 class="choice">ดิ้นอีกเพื่อให้รากหลุดจากพื้น</p>
+                        <p value=2 class="choice">หันกลับไปสู้กับเงา</p>
+                        <p value=0 class="choice">ป้องกันตัวเอง</p>
+                        <p value=1 class="choice">ตัดรากตัวเองทิ้งเพื่อไปต่อ</p>
+                    </div>
+                </div>
+                <div id="tab61" class="tab-content align-top"></div>
+                <div id="tab62" class="tab-content align-top">
+                    <p class="text">&lt;&gt;หันกลับมามองแล้วพบว่าเงานั้นไม่ได้มีอยู่จริง</p>
+                </div>
+                <div id="tab63" class="tab-content align-top">
+                    <div class="archievement-container">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <div class="archievement-name">
+                            <p class="archievement-text">Achievement Unlocked</p>
+                            <p class="archievement-text text-brown">เผชิญหน้ากับความกลัว</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab64" class="tab-content align-top">
+                    <p class="text">&lt;&gt;กำลังจะเดินหน้าต่อแต่พบกับกิ่งไม้ยักษ์ที่มีรูปร่างคล้ายมือ</p>
+                    <p class="text">ยื่นเข้ามาหา&lt;&gt; พยายามสื่อว่ากำลังจะช่วยให้เขาไปต่อ</p>
+                </div>
+                <div id="tab65" class="tab-content align-top">
+                    <p class="text">ปรากฏว่ากิ่งไม้ที่ยื่นเข้ามาช่วย&lt;&gt;ไว้นั้นคือกิ่งไม้ของต้นไม้ใหญ่</p>
+                    <p class="text">ต้นหนึ่งในป่า ที่มีลักษณะคล้าย ๆ กับ&lt;&gt;</p>
+                </div>
+                <div id="tab66" class="tab-content align-top">
+                    <p class="text">ต้นไม้นั้นได้ช่วยเหลือ&lt;&gt;ไว้และได้ชี้ทางที่ควรจะไปต่อ</p>
+                    <p class="text">รวมถึงได้ให้ยาวิเศษกับ&lt;&gt;ดื่มด้วยก่อนจะจากกัน</p>
+                </div>
+                <div id="tab67" class="tab-content align-top">
+                    <p class="text">&lt;&gt;เดินทางด้วยแรงเฮือกสุดท้ายแม้รู้ว่าไม่ทันการณ์แล้ว</p>
+                    <p class="text">แต่&lt;&gt;ก็เดินทางต่อจนไปจบ ณ ที่แห่งหนึ่ง</p>
+                </div>
+                <div id="tab68" class="tab-content align-top">
+                    <p class="text">ที่แห่งนั้นคือแหล่งน้ำศักดิ์สิทธิ์ เมื่อ&lt;&gt;เดินไปถึงแหล่งน้ำ</p>
+                    <p class="text">จึงเลือกที่จะพักและดื่มน้ำจากแหล่งน้ำ</p>
+                </div>
+                <div id="tab69" class="tab-content align-bottom">
+                    <p class="text">&lt;&gt;มองไปที่ผิวน้ำและเห็นเงาสะท้อนของตัวเองอยู่บนผิวน้ำในลักษณะต่าง ๆ</p>
+                </div>
+                <div id="tab70" class="tab-content align-bottom">
+                    <p class="text">&lt;&gt;ได้เห็นเงาสะท้อนของตัวเองที่บิดเบี้ยว เงาสะท้อนที่เบลอ ไม่ชัดเจน</p>
+                    <p class="text">และเงาสะท้อนตัวเองที่มีขนาดเล็กกว่าปกติ</p>
+                </div>
+                <div id="tab71" class="tab-content align-bottom">
+                    <p class="text">เมื่อ&lt;&gt;มองไปที่เงาสะท้อนของตัวเอง ก็เหมือนกับได้เห็นตัวเองที่ชัดมากขึ้น</p>
+                    <p class="text">และได้เห็นว่าการเดินทางที่ผ่านมาตัวเองได้เติบโตมากขึ้นขนาดไหน</p>
+                </div>
+                <div id="tab72" class="tab-content align-bottom">
+                    <p class="text">จากนั้นฝนก็ตกลงมาและกระทบกับเงาบนผิวน้ำหายไป</p>
+                </div>
+                <div id="tab73" class="tab-content align-bottom">
+                    <p class="text">&lt;&gt;เงยหน้ามองขึ้นฟ้าและพบว่าฝนกำลังตกลงมาอย่างแรง</p>
+                    <p class="text">จึงต้องรีบหาที่หลบฝนโดยเร็ว</p>
+                </div>
+                <div id="tab74" class="tab-content align-bottom">
+                    <p class="text">&lt;&gt;ยืนขึ้นเพื่อที่จะเดินไปหาที่หลบฝน</p>
+                </div>
+                <div id="tab75" class="tab-content align-bottom">
+                    <p class="text">แต่เขาก้าวพลาดและลื่นตกลงไปในแหล่งน้ำ</p>
+                </div>
+                <div id="tab76" class="tab-content align-bottom">
+                    <p class="text">&lt;&gt;ไม่ได้สติ จมดิ่งลงไปในน้ำลึกขึ้นเรื่อย ๆ ในใจของ&lt;&gt;ก็รู้สึกถึงความสิ้นหวัง</p>
+                    <p class="text">ความรู้สึกที่ไปต่อไม่ไหว ความรู้สึกที่ไม่ดีต่าง ๆ ที่ถาโถมเข้ามาในใจพร้อม ๆ กัน</p>
+                </div>
+                <div id="tab77" class="tab-content align-bottom">
+                    <p class="text">แต่แล้ว&lt;&gt;ก็นึกถึงเส้นทางที่ผ่านมาตลอดการเดินทาง</p>
+                </div>
+                <div id="tab78" class="tab-content">
+                    <img class="past1" src="./assets/object/past1.png" alt="">
+                    <img class="past1 blur" src="./assets/object/past1.png" alt="">
+                    <div class="align-bottom-with-past">
+                        <p class="text">ตั้งแต่จุดเริ่มต้นของการเดินทาง</p>
+                    </div>
+                </div>
+                <div id="tab79" class="tab-content">
+                    <img class="past1" src="./assets/object/past1.png" alt="">
+                    <img class="past2" src="./assets/object/past2.png" alt="">
+                    <div class="align-bottom-with-past">
+                        <p class="text">ช่วงเวลาดี ๆ และสิ่งดี ๆ ที่เกิดขึ้น</p>
+                    </div>
+                </div>
+                <div id="tab80" class="tab-content">
+                    <img class="past1" src="./assets/object/past1.png" alt="">
+                    <img class="past2" src="./assets/object/past2.png" alt="">
+                    <img class="past3" src="./assets/object/past3.png" alt="">
+                    <div class="align-bottom-with-past">
+                        <p class="text">เส้นทางที่แม้จะยากลำบาก แต่ก็สวยงาม</p>
+                    </div>
+                </div>
+                <div id="tab81" class="tab-content">
+                    <img class="past1" src="./assets/object/past1.png" alt="">
+                    <img class="past2" src="./assets/object/past2.png" alt="">
+                    <img class="past3" src="./assets/object/past3.png" alt="">
+                    <img class="past4" src="./assets/object/past4.png" alt="">
+                    <div class="align-bottom-with-past">
+                        <p class="text">อุปสรรคมากมายที่ได้พบเจอและได้ฝ่าฟันผ่านมา</p>
+                    </div>
+                </div>
+                <div id="tab82" class="tab-content">
+                    <img class="past1" src="./assets/object/past1.png" alt="">
+                    <img class="past2" src="./assets/object/past2.png" alt="">
+                    <img class="past3" src="./assets/object/past3.png" alt="">
+                    <img class="past4" src="./assets/object/past4.png" alt="">
+                    <img class="past5" src="./assets/object/past5.png" alt=""> 
+                    <div class="align-bottom-with-past">
+                        <p class="text">รวมถึงการที่ได้เผชิญหน้ากับสิ่งที่ตัวเองกลัว</p>
+                    </div>
+                </div>
+                <div id="tab83" class="tab-content align-bottom">
+                    <p class="text"></p>
+                </div>
+                <div id="tab84" class="tab-content align-bottom">
+                    <p class="text">&lt;&gt;คิดย้อนเรื่องราวทั้งหมดและได้สติขึ้นมา จึงว่ายน้ำขึ้นไปที่ฝั่งโดยเร็ว</p>
+                </div>
+                <div id="tab85" class="tab-content align-bottom">
+                    <div class="archievement-container">
+                        <img class="archievement-icon" src="./assets/object/tree-shoot.PNG" alt="">
+                        <div class="archievement-name">
+                            <p class="archievement-text">Achievement Unlocked</p>
+                            <p class="archievement-text text-brown">รับรู้คุณค่าของตัวเอง</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab86" class="tab-content align-top">
+                    <p class="text">&lt;&gt;นั่งพักอยู่ใต้ต้นไม้ใหญ่ต้นหนึ่งและ</p>
+                    <p class="text">ทบทวนเรื่องราวระหว่างการเดินทางทั้งหมดอีกครั้ง</p>
+                </div>
+                <div id="tab87" class="tab-content align-middle">
+                    <p class="text">&lt;&gt;เงยหน้ามองฟ้า</p>
+                    <p class="text">พบว่าตอนนี้เป็นเวลาที่ดึกมากแล้ว</p>
+                </div>
+                <div id="tab88" class="tab-content align-middle">
+                    <p class="text">ซึ่งแม้จะเลยเวลาที่จะไปรับแสงศักดิ์สิทธิ์ได้แล้ว</p>
+                    <p class="text">แต่บนท้องฟ้าค่ำคืนนี้ก็เต็มไปด้วยดวงดาวระยิบระยับมากมาย</p>
+                </div>
+                <div id="tab89" class="tab-content align-middle">
+                    <p class="text bold">“ชีวิตสอนอะไรเรามากมาย ทุกเส้นทางที่เราผ่านมา  </p>
+                    <p class="text bold">ปลายทางนั้นไม่ใช่สิ่งสำคัญ แต่เส้นทางระหว่างทางต่างหาก</p>
+                    <p class="text bold">ที่สอนอะไรบางอย่างให้แก่เราเสมอ”</p>
+                </div>
+                <div id="tab90" class="tab-content align-middle">
+                    <p class="text bold">“อย่าลืมว่าเราได้ชัยชนะในทุก ๆ วันที่ไม่ยอมแพ้”</p>
+                </div>
+            </div>
+        </div>
+        <img id="scene" src="./assets/scenes/scene3.png" class="custom-aspect-ratio-transition" alt="">
+    </div>
+    
+</body>
+</html>
+
+
+<script>
+
+    //scene
+    let curScene = 3 //default 3 
+    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,42,43,46,47,48,50,52,56,57,59,62,63,65,67,70,71,72,73,74,81,84,85] // tab n-1
+    let image = document.getElementById("scene");
+    
+    // tab
+    let curTab = 88 //default 0
+    let tabs = document.getElementsByClassName("tab-content")
+    let firstTab = tabs[curTab]
+    firstTab.style.visibility = "visible"
+    firstTab.style.display = "block"
+    let text_container = document.getElementsByClassName("text-container")[0]
+
+
+    var preloadLinks = document.querySelectorAll('link[rel="preload"]');
+    var loadedResourcesCount = 0;
+
+    preloadLinks.forEach(function(link) {
+        
+        link.addEventListener('load', function() {
+            
+            loadedResourcesCount++;
+
+            if (loadedResourcesCount === preloadLinks.length) {
+                
+                    let all_text = document.getElementsByTagName('p')
+                    let name = localStorage.getItem('name')
+                    for(let i = 0 ; i < all_text.length ; i++){
+                        string = all_text[i].innerHTML
+                        all_text[i].innerHTML = string.replace("&lt;&gt;", name ?? 'น้องต้นไม้')
+                    }
+                    //start transition first time
+                    image.style.opacity = 1
+                    text_container.style.opacity = 1;
+            }
+    });
+});
+
+
+
+    function nextTab(nextPage = 1) {
+        let text_container = document.getElementsByClassName("text-container")[0]
+        text_container.style.opacity = 0
+
+        let changeImage = false
+        if(nextPage > 0 && sceneCritical.includes(curTab)){
+                curScene++;
+                changeImage = true;
+            
+        }
+        else if(nextPage < 0 && sceneCritical.includes(curTab+nextPage)){
+            curScene--;
+            changeImage = true
+        }
+        let image = document.getElementById("scene");
+        if(changeImage) image.style.opacity = 0
+        // if(changeImage) image.style.filter = 'blur(15px)'
+        setTimeout(() => {
+            let curShow = document.getElementsByClassName("tab-content")[curTab]
+            curShow.style.visibility = "hidden"
+            curShow.style.display = "none"
+
+        }, 300)
+
+
+        setTimeout(() => {
+            //nextab
+            if(curTab+nextPage <= tabs.length && curTab+nextPage >= 0) curTab+=nextPage;
+
+
+            if(curTab >= tabs.length){
+                transitionToPage("./result.html");
+            }
+            //special conditions
+            if(curTab === 39 || curTab == 63){
+                parent.postMessage('next_sound','*')
+            }
+
+            curShow = document.getElementsByClassName("tab-content")[curTab]
+
+            curShow.style.visibility = "visible"
+            curShow.style.display = "block"
+ 
+
+            //transition
+            text_container.style.opacity = 1
+  
+        },300+500*changeImage)
+
+                //image transition
+                setTimeout(() => {
+            if(changeImage){
+                image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".gif" : ".png")
+                image.style.opacity = 1;
+                // image.style.filter = null
+            }
+        }, 500)
+
+    }
+
+    let body = document.getElementsByTagName("body")[0]
+    let preventElement = ["choice", "circle"]
+    let preventScene = [11,16,22,28,29,34,35,36,43,55,59]
+    body.addEventListener("click", function (data){
+
+        if([35,36].includes(curTab)){
+            nextTab(34-curTab)
+        }
+        if(!preventElement.includes(data?.srcElement?.className) && !preventScene.includes(curTab))
+            nextTab();
+    })
+
+    body.addEventListener("keydown", function (key){
+        if(key.keyCode === 39 && !preventScene.includes(curTab)){
+            nextTab(1)
+        } else if(key.keyCode === 37 && !preventScene.includes(curTab-1)){
+            nextTab(-1)
+        }
+    })
+
+
+    // choice
+    let choice = document.getElementsByClassName("choice")
+
+    for(let i = 0 ; i < choice.length ; i++){
+        choice[i].addEventListener("click", function(event){
+            let choice_score = parseInt(event?.srcElement?.attributes?.value?.value)
+            let parent = event.srcElement.parentNode
+            let q_no = parseInt(parent?.id?.replace('question-set-',''))
+
+            if([2,5,6].includes(q_no)){
+                currentScore_Hor = parseInt(localStorage.getItem('score_hor') ?? 0)
+                localStorage.setItem('score_hor', currentScore_Hor + choice_score)
+
+            }
+
+            if([1,3,4].includes(q_no)){
+                currentScore_Ver = parseInt(localStorage.getItem('score_ver') ?? 0)
+                localStorage.setItem('score_ver', currentScore_Ver + choice_score)
+
+            }
+
+
+            console.log('score_hor', localStorage.getItem('score_hor'), 'score_ver', localStorage.getItem('score_ver'));
+            nextTab(1)
+    })
+    }
+
+    //circle
+    let circle = document.getElementsByClassName("circle")
+    for(let i = 0 ; i < circle.length ; i++){
+        circle[i].addEventListener("click", function(data){
+            if(data?.srcElement?.id === "circle-1"){
+                nextTab(3)
+            }
+            else if(data?.srcElement?.id === "circle-2"){
+                nextTab(1)
+            }
+            else if(data?.srcElement?.id === "circle-3"){
+                nextTab(2)
+            }
+    })
+    }
+</script>
+
+
