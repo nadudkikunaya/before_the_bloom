@@ -105,6 +105,9 @@
         }, 1000)
     }
 
+
+  
+
     function nextPage(){
         let name = document.getElementById("name_input")
         if(!name?.value || name?.value === "" || name?.value == null){
@@ -113,12 +116,9 @@
         else{
             let nameSave = `${name?.value?.trim()}`
 
-        localStorage.setItem('name', nameSave)
-
-        setTimeout(() => {
+            localStorage.setItem('name', nameSave)
 
             transitionToPage('./story.html')
-        },200)
         }
     }
 </script>

@@ -489,6 +489,7 @@
             </div>
         </div>
         <img id="scene" src="./assets/scenes/scene3.png" class="custom-aspect-ratio-transition" alt="">
+        <img id="scene2" src="./assets/scenes/scene3.png" class="custom-aspect-ratio-transition2" alt="">
     </div>
     
 </body>
@@ -499,8 +500,9 @@
 
     //scene
     let curScene = 3 //default 3 
-    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,42,43,46,47,48,50,52,56,57,59,62,63,65,67,70,71,72,73,74,81,84,85,89] // tab n-1
+    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,43,44,46,47,48,50,52,56,57,59,62,63,65,67,70,71,72,73,74,81,84,85,89] // tab n-1
     let image = document.getElementById("scene");
+    let image2 = document.getElementById('scene2')
     
     // tab
     let curTab = 0 //default 0
@@ -533,6 +535,9 @@
                     //start transition first time
                     image.style.opacity = 1
                     text_container.style.opacity = 1;
+                    setTimeout(() => {
+                        image2.style.visibility = 'visible'
+                    },400)
             }
     });
 });
@@ -553,21 +558,26 @@
             curScene--;
             changeImage = true
         }
-        let image = document.getElementById("scene");
         // if(changeImage) image.style.opacity = 0
         if(changeImage) {
-            image.style.filter = 'blur(10px) opacity(0.2)'
+            // image.style.filter = 'blur(10px) opacity(0.2)'
+            image.style.visibility = 'hidden'
+            image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png")
+            image.style.zIndex = 1
+            image2.style.zIndex = 2
+            image.style.visibility = 'visible'
+
 
         }
+
+        // setTimeout for text_container.style.opacity = 0
         setTimeout(() => {
-            let curShow = document.getElementsByClassName("tab-content")[curTab]
-            curShow.style.visibility = "hidden"
-            curShow.style.display = "none"
-
-        }, 300)
+        let curShow = document.getElementsByClassName("tab-content")[curTab]
+        curShow.style.visibility = "hidden"
+        curShow.style.display = "none"
 
 
-        setTimeout(() => {
+  
             //nextab
             if(curTab+nextPage <= tabs.length && curTab+nextPage >= 0) curTab+=nextPage;
 
@@ -584,20 +594,18 @@
 
             curShow.style.visibility = "visible"
             curShow.style.display = "block"
- 
+        },300)
 
-            //transition
-            text_container.style.opacity = 1
-  
-        },300+500*changeImage)
+    
+        //setTimeout for text_container.style.opacity = 1
+        if(!changeImage){
+        setTimeout(() => {
+                text_container.style.opacity = 1
+                //transition
+                
+            },300)
+        }
 
-                //image transition
-                setTimeout(() => {
-            if(changeImage){
-                image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png")
-                // image.style.filter = null
-            }
-        }, 500)
 
     }
 
@@ -622,7 +630,23 @@
     })
 
     image.addEventListener('load', () => {
-        image.style.filter = null;
+        image.style.opacity = 1
+        image2.style.opacity = 0
+
+        setTimeout(() => {
+            image2.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png") 
+            image.style.zIndex = 2
+            image2.style.zIndex = 1
+
+        },350)
+
+        setTimeout(() => {
+            image2.style.opacity = 1
+        },500)
+
+        setTimeout(() => {
+            text_container.style.opacity = 1
+        }, 500);
     });
 
 

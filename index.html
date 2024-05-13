@@ -39,6 +39,14 @@
                 audio.load()
                 audio.play()
             }
+            if(event?.data === "reset"){
+                let src = document.getElementById('sound_src')
+                sound++;
+                src.src = "./assets/sounds/sound"+ 1 +".mp4"
+                let audio = document.getElementById('audio')
+                audio.load()
+                audio.play()
+            }
         });
 
         var audio = document.getElementById('audio');

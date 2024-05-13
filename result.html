@@ -25,7 +25,7 @@
     <div class="container-result">
         <div class="box-expand">
         <div class="container-row">
-            <a class="custom-button text-size1" href="./master.html">เล่นใหม่</a>
+            <a class="custom-button text-size1" onclick="nextPage()">เล่นใหม่</a>
             <div class="header-container">
                 <p class="text-size1 margin-t-1">คุณได้เติบโตเป็น</p>
                 <p id="view_name" class="text-size2 margin-0"></p>
@@ -168,4 +168,8 @@
     desc.innerHTML = mytree?.desc
 
     
+    function nextPage(){
+        parent.postMessage('reset','*')
+        window.location.href = "./master.html"
+    }
 </script>
