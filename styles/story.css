@@ -23,6 +23,27 @@
 }
 
 
+.text2 {
+    font-family: 'Mitr';
+    color: black;
+    line-height: normal;
+    font-size: 1.3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-wrap: balance;
+}
+
+.bold2 {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.bold2:hover {
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+
 .change-cursor {
     cursor: default;
 }

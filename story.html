@@ -477,6 +477,15 @@
                 <div id="tab90" class="tab-content align-middle">
                     <p class="text bold">“อย่าลืมว่าเราได้ชัยชนะในทุก ๆ วันที่ไม่ยอมแพ้”</p>
                 </div>
+                <div id="tab91" class="tab-content align-middle">
+                    <p class="text2">ขอบคุณที่ร่วมเดินทางครั้งนี้จนจบ</p>
+                    <p class="text2">ทุกการเดินทางที่ผ่านมาคงจะให้บทเรียนคุณมากมาย</p>
+                    <p class="text2">และต่อจากนี้ยังมีเส้นทางอีกยาวไกลที่เป็นของคุณที่จะตัดสินใจ</p>
+                    <p class="text2">หากมีข้อคิดเห็นหรืออยากแบ่งปันสิ่งใด สามารถเข้ามาแสดงความคิดเห็นได้ที่</p>
+                    <p class="text2">#journeysbeforethebloom</p>
+                    <br>
+                    <a class="text2 bold2" onclick="nextTab(1)">แตะเพื่อไปต่อ ></a>
+                </div>
             </div>
         </div>
         <img id="scene" src="./assets/scenes/scene3.png" class="custom-aspect-ratio-transition" alt="">
@@ -490,7 +499,7 @@
 
     //scene
     let curScene = 3 //default 3 
-    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,42,43,46,47,48,50,52,56,57,59,62,63,65,67,70,71,72,73,74,81,84,85] // tab n-1
+    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,42,43,46,47,48,50,52,56,57,59,62,63,65,67,70,71,72,73,74,81,84,85,89] // tab n-1
     let image = document.getElementById("scene");
     
     // tab
@@ -590,20 +599,20 @@
 
     let body = document.getElementsByTagName("body")[0]
     let preventElement = ["choice", "circle"]
-    let preventScene = [11,16,22,28,29,34,35,36,43,55,59]
+    let preventScene = [11,16,22,28,29,34,35,36,43,55,59,90]
     body.addEventListener("click", function (data){
 
         if([35,36].includes(curTab)){
             nextTab(34-curTab)
         }
         if(!preventElement.includes(data?.srcElement?.className) && !preventScene.includes(curTab))
-            nextTab();
+            nextTab(1);
     })
 
     body.addEventListener("keydown", function (key){
         if(key.keyCode === 39 && !preventScene.includes(curTab)){
             nextTab(1)
-        } else if(key.keyCode === 37 && !preventScene.includes(curTab-1)){
+        } else if(key.keyCode === 37 && !preventScene.includes(curTab)){
             nextTab(-1)
         }
     })

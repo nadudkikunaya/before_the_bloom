@@ -2,7 +2,7 @@ var linkElement = document.createElement("link");
 
 // Set attributes for the link element
 
-for (let i = 1; i <= 40; i++) {
+for (let i = 3; i <= 41; i++) {
   linkElement.rel = "preload";
   linkElement.href = "./assets/scenes/scene" + i + (i === 13 ? ".gif" : ".png");
   linkElement.as = "image";
