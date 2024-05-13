@@ -510,6 +510,8 @@
     firstTab.style.display = "block"
     let text_container = document.getElementsByClassName("text-container")[0]
 
+    
+
 
     var preloadLinks = document.querySelectorAll('link[rel="preload"]');
     var loadedResourcesCount = 0;
@@ -590,7 +592,6 @@
                 setTimeout(() => {
             if(changeImage){
                 image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".gif" : ".png")
-                image.style.opacity = 1;
                 // image.style.filter = null
             }
         }, 500)
@@ -616,6 +617,10 @@
             nextTab(-1)
         }
     })
+
+    image.addEventListener('load', () => {
+        image.style.opacity = 1;
+    });
 
 
     // choice
