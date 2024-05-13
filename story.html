@@ -402,43 +402,55 @@
                     <p class="text">แต่แล้ว&lt;&gt;ก็นึกถึงเส้นทางที่ผ่านมาตลอดการเดินทาง</p>
                 </div>
                 <div id="tab78" class="tab-content">
-                    <img class="past1" src="./assets/object/past1.png" alt="">
-                    <img class="past1 blur" src="./assets/object/past1.png" alt="">
-                    <div class="align-bottom-with-past">
+
+                    <div class="past-container">
+                        <img class="past1" src="./assets/object/past1.png" alt="">
+
+
+                    </div>
+                    <div class="align-bottom-with-past align-bottom">
                         <p class="text">ตั้งแต่จุดเริ่มต้นของการเดินทาง</p>
                     </div>
                 </div>
                 <div id="tab79" class="tab-content">
-                    <img class="past1" src="./assets/object/past1.png" alt="">
-                    <img class="past2" src="./assets/object/past2.png" alt="">
-                    <div class="align-bottom-with-past">
+                    <div class="past-container">
+                        <img class="past1" src="./assets/object/past1.png" alt="">
+                        <img class="past2" src="./assets/object/past2.png" alt="">
+                    </div>
+                    <div class="align-bottom-with-past align-bottom">
                         <p class="text">ช่วงเวลาดี ๆ และสิ่งดี ๆ ที่เกิดขึ้น</p>
                     </div>
                 </div>
                 <div id="tab80" class="tab-content">
-                    <img class="past1" src="./assets/object/past1.png" alt="">
-                    <img class="past2" src="./assets/object/past2.png" alt="">
-                    <img class="past3" src="./assets/object/past3.png" alt="">
-                    <div class="align-bottom-with-past">
+                    <div class="past-container">
+                        <img class="past1" src="./assets/object/past1.png" alt="">
+                        <img class="past2" src="./assets/object/past2.png" alt="">
+                        <img class="past3" src="./assets/object/past3.png" alt="">
+                    </div>
+                    <div class="align-bottom-with-past align-bottom">
                         <p class="text">เส้นทางที่แม้จะยากลำบาก แต่ก็สวยงาม</p>
                     </div>
                 </div>
                 <div id="tab81" class="tab-content">
-                    <img class="past1" src="./assets/object/past1.png" alt="">
-                    <img class="past2" src="./assets/object/past2.png" alt="">
-                    <img class="past3" src="./assets/object/past3.png" alt="">
-                    <img class="past4" src="./assets/object/past4.png" alt="">
-                    <div class="align-bottom-with-past">
+                    <div class="past-container">
+                        <img class="past1" src="./assets/object/past1.png" alt="">
+                        <img class="past2" src="./assets/object/past2.png" alt="">
+                        <img class="past3" src="./assets/object/past3.png" alt="">
+                        <img class="past4" src="./assets/object/past4.png" alt="">
+                    </div>
+                    <div class="align-bottom-with-past align-bottom">
                         <p class="text">อุปสรรคมากมายที่ได้พบเจอและได้ฝ่าฟันผ่านมา</p>
                     </div>
                 </div>
                 <div id="tab82" class="tab-content">
+                    <div class="past-container">
                     <img class="past1" src="./assets/object/past1.png" alt="">
                     <img class="past2" src="./assets/object/past2.png" alt="">
                     <img class="past3" src="./assets/object/past3.png" alt="">
                     <img class="past4" src="./assets/object/past4.png" alt="">
                     <img class="past5" src="./assets/object/past5.png" alt=""> 
-                    <div class="align-bottom-with-past">
+                    </div>
+                    <div class="align-bottom-with-past align-bottom">
                         <p class="text">รวมถึงการที่ได้เผชิญหน้ากับสิ่งที่ตัวเองกลัว</p>
                     </div>
                 </div>
@@ -512,6 +524,10 @@
     firstTab.style.display = "block"
     let text_container = document.getElementsByClassName("text-container")[0]
 
+    let body = document.getElementsByTagName("body")[0]
+
+
+
     
 
 
@@ -546,6 +562,25 @@
 
     function nextTab(nextPage = 1) {
         let text_container = document.getElementsByClassName("text-container")[0]
+        if(curTab >= 77 && curTab <= 81){
+            pastNo = curTab%75
+            console.log(pastNo);
+            let past = document.getElementsByClassName('past'+pastNo)
+            let bottomWpast = document.getElementsByClassName('align-bottom-with-past')
+            if(nextPage>= 1){
+            image.style.opacity -= 0.2
+            image2.style.opacity -= 0.2
+            }
+            bottomWpast[pastNo-2].style.opacity = 0
+            for(let i = 0 ; i < past.length ; i++){
+                setTimeout(() => {
+                    bottomWpast[pastNo-1].style.opacity = 1
+                    past[i].style.opacity = 1
+                },400)
+            }
+
+        }
+        if(!(curTab >= 77 && curTab <= 81))
         text_container.style.opacity = 0
 
         let changeImage = false
@@ -561,6 +596,7 @@
         // if(changeImage) image.style.opacity = 0
         if(changeImage) {
             // image.style.filter = 'blur(10px) opacity(0.2)'
+            body.style.cursor = 'wait'
             image.style.visibility = 'hidden'
             image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png")
             image.style.zIndex = 1
@@ -609,7 +645,7 @@
 
     }
 
-    let body = document.getElementsByTagName("body")[0]
+
     let preventElement = ["choice", "circle"]
     let preventScene = [11,16,22,28,29,34,35,36,43,46,55,59,90]
     body.addEventListener("click", function (data){
@@ -646,6 +682,7 @@
 
         setTimeout(() => {
             text_container.style.opacity = 1
+            body.style.cursor = 'default'
         }, 500);
     });
 
