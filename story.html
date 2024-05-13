@@ -554,8 +554,11 @@
             changeImage = true
         }
         let image = document.getElementById("scene");
-        if(changeImage) image.style.opacity = 0
-        // if(changeImage) image.style.filter = 'blur(15px)'
+        // if(changeImage) image.style.opacity = 0
+        if(changeImage) {
+            image.style.filter = 'blur(10px) opacity(0.2)'
+
+        }
         setTimeout(() => {
             let curShow = document.getElementsByClassName("tab-content")[curTab]
             curShow.style.visibility = "hidden"
@@ -600,7 +603,7 @@
 
     let body = document.getElementsByTagName("body")[0]
     let preventElement = ["choice", "circle"]
-    let preventScene = [11,16,22,28,29,34,35,36,43,55,59,90]
+    let preventScene = [11,16,22,28,29,34,35,36,43,46,55,59,90]
     body.addEventListener("click", function (data){
 
         if([35,36].includes(curTab)){
@@ -619,7 +622,7 @@
     })
 
     image.addEventListener('load', () => {
-        image.style.opacity = 1;
+        image.style.filter = null;
     });
 
 

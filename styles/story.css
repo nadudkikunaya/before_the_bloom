@@ -51,7 +51,7 @@
 .custom-aspect-ratio-transition {  
     width: 100%;
     transition: opacity 0.3s ;
-    /* transition: filter 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+    transition: filter 0.3s linear;
     opacity: 0;
 }
 
