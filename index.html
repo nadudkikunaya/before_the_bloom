@@ -41,5 +41,14 @@
             }
         });
 
+        var audio = document.getElementById('audio');
+
+        audio.addEventListener('ended', function() {
+        // Reset the playback position to the beginning
+        audio.currentTime = 0;
+        // Restart playback
+        audio.play();
+    });
+
 
 </script>
