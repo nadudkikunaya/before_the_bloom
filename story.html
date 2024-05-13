@@ -546,7 +546,7 @@
                     let name = localStorage.getItem('name')
                     for(let i = 0 ; i < all_text.length ; i++){
                         string = all_text[i].innerHTML
-                        all_text[i].innerHTML = string.replace("&lt;&gt;", name ?? 'น้องต้นไม้')
+                        all_text[i].innerHTML = string.replace(/&lt;&gt;/g, name ?? 'น้องต้นไม้')
                     }
                     //start transition first time
                     image.style.opacity = 1
