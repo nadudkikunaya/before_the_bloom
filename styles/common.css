@@ -18,6 +18,7 @@ body {
     -webkit-animation-name: whiteToBlack;  
     -webkit-animation-iteration-count: 1;  
     -webkit-animation-duration: 1.5s; 
+    overflow: hidden;
 }
 
 .container{
