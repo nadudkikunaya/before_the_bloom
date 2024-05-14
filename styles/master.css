@@ -3,6 +3,8 @@
     width: 100%;
     text-align: center;
     /* background-color: white; */
+    max-height: 100vh;
+    overflow: hidden;
     
 }
 
