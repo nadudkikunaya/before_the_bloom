@@ -19,7 +19,6 @@ body {
     -webkit-animation-iteration-count: 1;  
     -webkit-animation-duration: 1.5s; 
     max-height: 100vh;
-    overflow: hidden;
 }
 
 .container{
@@ -30,7 +29,6 @@ body {
     width: 100vw;
     height: 100vh; /* Ensure body fills the viewport height */
     max-height: 100vh;
-    overflow: hidden;
 }
 
 .custom-aspect-ratio {  
@@ -55,11 +53,15 @@ body {
     position: absolute;
     width: 100%;
     max-height: 100vh; 
-    align-content: end;
-    text-align: end;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: end;
+    /* align-content: end; */
+    /* text-align: end; */
     margin-bottom: 5vw;
     margin-right: 3vw;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .button-custom {
