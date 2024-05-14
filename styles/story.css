@@ -5,9 +5,10 @@
     max-height: 100vh;
     transition: opacity 0.3s;
     opacity: 0;
-    /* background-color: white; */
+    /* background-color: red; */
     z-index: 3;
     overflow: hidden;
+
     
 }
 
@@ -61,7 +62,6 @@
 .change-cursor {
     cursor: default;
 }
-
 .custom-aspect-ratio-transition {  
     width: 100%;
     max-height: 100vh;

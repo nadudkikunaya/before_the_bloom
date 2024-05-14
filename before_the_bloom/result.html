@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./styles/common.css"> -->
+    <link rel="stylesheet" href="./styles/result.css">
+    <link rel="preload" href="./assets/object/dandelion.png" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/fern.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/cactus.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/daisy.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/cherry_blossom.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/lotus.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/blue_iris.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/pine_tree.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/oak_tree.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/sunflower.PNG" as="image" type="image/png">
+    <link rel="preload" href="./assets/object/bamboo.PNG" as="image" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Mitr' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="./script/common.js"></script>
+    <title>Before The Bloom</title>
+</head>
+<body>
+    <div class="container-result">
+        <div class="box-expand">
+        <div class="container-row">
+            <a class="custom-button text-size1" onclick="nextPage()">เล่นใหม่</a>
+            <div class="header-container">
+                <p class="text-size1 margin-t-1">คุณได้เติบโตเป็น</p>
+                <p id="view_name" class="text-size2 margin-0"></p>
+            </div>
+            <a class="custom-button text-size1" href="https://linktr.ee/beforethebloom.bkk" target="_blank" rel="noopener noreferrer">เกี่ยวกับงาน</a>
+        </div>
+        <div class="container-row">
+            <div class="box-split">
+                <img id="character" class="character" src="./assets/object/bamboo.PNG" alt="">
+            </div>
+            <div class="box-split">
+                <p id="header_en" class="text-size3"></p>
+                <p id="header_th" class="text-size3"></p>
+                <p id="desc" class="text-size4"></p>
+                <div class="button-set2">
+                    <a id="share" class="custom-button2 text-size5" href="" download>share</a>
+                        <!-- <span class="material-symbols-outlined">
+                        share_windows
+                        </span></a> -->
+                    <a class="custom-button2 text-size5" href="./article.html">บทความ</a>
+                </div>
+                <div class="margin-t-1">
+                <p class="text-size6">แบ่งปันผลลัพธ์และเรื่องราวการเรียนรู้ในการเดินทางของคุณผ่าน
+                <p class="text-size6">#journeysbeforethebloom และค้นพบเรื่องราวอื่น ๆ เพิ่มเติมในเว็บไซต์</p>
+            </div>
+            </div>
+        </div>
+    </div>
+        <img src="./assets/object/result.png" class="custom-aspect-ratio" alt="">
+
+    </div>
+</body>
+</html>
+
+
+<script>
+    let characters_table = [['D','D','F','F','C'],['DS','CB','L','P','O'],['DS','CB','BI','S','B']]
+    let dict = {
+        'D': {
+            name: 'dandelion',
+            view_name: 'แดนดิไลออน',
+            header_en: 'THE FREE-SPIRITED WANDERER',
+            header_th: 'นักเดินทางผู้รักอิสระ',
+            desc: 'นักเดินทางที่มีความฝัน มีความทะเยอทะยาน มีความต้องการที่จะเดินทางไปยังที่ที่ไม่รู้จัก เรียนรู้และพบเจอกับสิ่งใหม่ ๆ แม้จะเป็นดอกไม้ที่มีช่วงเวลาที่บอบบางบ้าง แต่ความบอบบางนั้นก็ทำให้ได้เรียนรู้อะไรมากมาย ทำให้ได้เข้มแข็งขึ้น จงโอบกอดสิ่งเหล่านั้น อย่ากลัว จงใช้ชีวิตให้เต็มที่ดั่งดอกแดนดิไลออนที่ปลิดปลิว'
+        },
+        'F': {
+            name: 'fern',
+            view_name: 'เลดี้เฟิร์น',
+            header_en: 'THE TRANQUIL ADVISOR',
+            header_th: 'ที่ปรึกษาผู้รักความสงบ',
+            desc: 'นักเดินทางที่มีความสุขุม ฉลาดและรอบรู้ สามารถให้ความช่วยเหลือและให้คำแนะนำที่ดีแก่ผู้อื่นได้ แม้จะเป็นต้นไม้ขนาดเล็กและอยู่ติดพื้นดิน แต่จริง ๆ แล้วเฟิร์นเป็นต้นไม้ที่แข็งแกร่ง ปรับตัวและเติบโตได้ในสถานการณ์ที่หลากหลาย ใช้ชีวิตด้วยความคิดในแง่ดีและดึงดูดสิ่งดี ๆ เข้ามา'
+        },
+        'C': {
+            name: 'cactus',
+            view_name: 'ตะบองเพชร',
+            header_en: 'THE STOIC WARRIOR',
+            header_th: 'นักสู้ผู้แข็งแกร่ง',
+            desc: 'นักสู้ที่แข็งแกร่ง มีความอดทนสูง พึ่งพาตนเองได้ แม้จะเป็นต้นที่ออกดอกช้าแต่ก็ไม่เป็นไร จงเติบโตไปในแบบของคุณ ให้โอกาสเหลือพื้นที่กับความผิดพลาดและอ่อนแอบ้างก็ได้ ยอมรับการเติบโตที่เป็นตัวเรา อย่าหยุดที่จะเติบโตและอย่าลืมที่จะขอบคุณตัวเองในทุก ๆ วัน ที่สามารถผ่านสถานการณ์ที่ท้าทายและยากลำบากได้เสมอ จงเติบโตต่อไปดั่งต้นตะบองเพชรที่แข็งแกร่ง'
+        },
+        'DS': {
+            name: 'daisy',
+            view_name: 'เดซี่',
+            header_en: 'THE CHEERFUL OPTIMIST BARD',
+            header_th: 'นักแต่งกวีผู้มองโลกในแง่ดี',
+            desc: 'นักแต่งกวีที่มองโลกในแง่ดี มีความสดใสและเบิกบานแผ่ให้กับคนรอบข้างเสมอ แม้จะเป็นดอกที่มีขนาดเล็กจนบางครั้งถูกมองข้ามไปแต่อยากให้คุณรับรู้ไว้เสมอว่าคุณไม่จำเป็นพิสูจน์ตัวเอง หากคุณรู้คุณค่าตัวเอง ก็ไม่จำเป็นต้องสนใจหากคนอื่นจะมองไม่เห็นความงามของคุณไม่ใช่สำหรับทุกคน และนั่นก็ไม่เป็นไร จงยอมรับความไม่สมบูรณ์แบบ เพราะมันทำให้คุณมีเอกลักษณ์'
+        },
+        'CB': {
+            name: 'cherry_blossom',
+            view_name: 'ต้นซากุระ',
+            header_en: 'THE ELEGANT ENCHANTRESS',
+            header_th: 'นักเวทย์ผู้สง่างาม',
+            desc: 'นักเวทย์ผู้เสกสร้างความงามในแต่ละช่วงเวลา แต่ก็ให้ความสำคัญกับปัจจุบัน และยอมรับการเปลี่ยนแปลงอย่างสง่างาม เพราะแม้เวลาของการผลิบานของตัวเองอาจยังมาไม่ถึงหรือผ่านไปแล้ว แต่ถึงอย่างนั้นก็ไม่เห็นเป็นไร เพราะช่วงเวลาผลิบานนั้นก็มีได้ตั้งหลายครั้ง วันหนึ่งคุณจะเติบโตในแบบที่คุณต้องการและผลิบานในเวลาที่คู่ควร'
+        },
+        'L': {
+            name: 'lotus',
+            view_name: 'บัว',
+            header_en: 'THE SPIRITUAL SEEKER',
+            header_th: 'ผู้แสวงหาจิตวิญญาณ',
+            desc: 'ผู้แสวงหาจิตวิญญาณผู้ทรงปัญญา มีความรอบรู้สง่างามและสงบ ให้ความรู้สึกถึงความบริสุทธิ์และความผ่อนคลาย มีความต้องการคือเป็นตัวเองที่ดีกว่าเมื่อวานเพราะเส้นทางการเติบโตที่ผ่านมากว่าจะพ้นน้ำขึ้นมานั่นไม่ง่าย แต่สิ่งต่าง ๆ เหล่านั้นหล่อหลอมให้กลายมาเป็นคุณในทุกวันนี้ จงชูดอกของตัวเองขึ้นมาเหมือนน้ำและเชื่อมั่นในตัวเองว่า คุณเองก็จะทำมันได้อย่างแน่นอน'
+        },
+        'BI': {
+            name: 'blue_iris',
+            view_name: 'ไอริส',
+            header_en: 'THE MYSTERIOUS ALCHEMIST',
+            header_th: 'นักเล่นแร่แปรธาตุผู้ลึกลับ',
+            desc: 'นักเล่นแร่แปรธาตุที่มีความสง่างาม ดึงดูด ดูลึกลับ มีความมั่นใจในตัวเอง ชอบการทดลอง เพราะการได้ลองทำสิ่งใหม่ ๆ จะทำให้ได้เรียนรู้อะไรบางอย่าง แม้ว่าบางครั้งจะมีสิ่งที่ทำไม่ได้แต่ก็ไม่จำเป็นต้องกังวล แค่จดจ่ออยู่กับสิ่งที่คุณทำได้และอยากทำ อย่าไล่ตามสิ่งที่คนอื่นทำ แต่จงทำสิ่งที่ตัวเองชอบและต้องการ' 
+        },
+        'P': {
+            name: 'pine_tree',
+            view_name: 'ต้นสน',
+            header_en: 'THE STOIC KNIGHT',
+            header_th: 'อัศวินผู้แข็งแกร่ง',
+            desc: 'อัศวินที่มีความแข็งแรง กำยำ มีความแน่วแน่และเด็ดเดี่ยว สู้รบและฝ่าฟันผ่านสิ่งต่าง ๆ มากมายและเต็มไปด้วยบาดแผล แม้จะเป็นอัศวินที่คอยปกป้องสิ่งสำคัญและคนอื่น แต่ก็ต้องอย่าลืมที่จะปกป้องร่างกายและจิตใจของตัวเองด้วย เป็นต้นที่เติบโตสูงใหญ่ขึ้นตามกาลเวลาและประสบการณ์ที่ผ่านมา และจะยังคงเติบโตมากขึ้นเรื่อย ๆ ตราบใดที่ยังมีความหวังและยังไม่ยอมแพ้'
+        },
+        'O': {
+            name: 'oak_tree',
+            view_name: 'ต้นโอ๊ก',
+            header_en: 'THE WISE GUARDIAN',
+            header_th: 'ผู้พิทักษ์มากประสบการณ์',
+            desc: 'ผู้พิทักษ์ผู้มากประสบการณ์ สุขุม แข็งแรง ทรงปัญญา และสามารถพึ่งพาตนเองได้ แผ่กิ่งก้านสาขาอย่างสง่างามตามการเติบโตเป็นต้นไม้ใหญ่ที่มีรากฐานที่แข็งแรงและมั่นคง จึงเลือกที่จะไม่ทำตามความคาดหวังของคนอื่น และทำในสิ่งที่ตัวเองต้องการและพึงพอใจ โดยไม่กลัวว่าใครจะมองมาแบบไหน',
+
+        },
+        'S': {
+            name: 'sunflower',
+            view_name: 'ทานตะวัน',
+            header_en: 'THE RADIANT OPTIMIST ARTIST',
+            header_th: 'ศิลปินผู้มองโลกในแง่ดี',
+            desc: 'ศิลปินผู้มองโลกในแง่ดี มีความเบิกบานและส่งมอบความสุขให้กับตัวเองและคนรอบข้างเสมอ ขอให้คุณจดจำช่วงเวลาดี ๆ ที่ได้ก้าวผ่าน เส้นทางข้างหน้ายังทอดอีกยาวไกลให้คุณได้เดินทาง เงยหน้ารับแสงแดดให้เต็มที่ ยิ้มให้กับสิ่งต่าง ๆ ที่พบเจอและเข้ามาในชีวิตแล้วโอบรับมันไว้ ขอให้คุณเติบโตต่อไปอย่างมีความสุขและงดงามในแบบของตัวเอง'   
+        },
+        'B': {
+            name: 'bamboo',
+            view_name: 'ต้นไผ่',
+            header_en: 'THE VERSATILE CRAFTMEN',
+            header_th: 'ช่างฝีมือผู้เก่งรอบด้าน',
+            desc: 'ช่างฝีมือผู้เก่งรอบด้าน มีความเรียบง่าย แต่เรียนรู้และเติบโตอยู่ตลอดเวลา แม้จะดูบอบบางแต่ก็มีความยืดหยุ่นต่อสถานการณ์ต่าง ๆ และบางครั้งแม้คุณอาจจะยังทำงานฝีมือชิ้นนั้นไม่สำเร็จ แต่นั่นก็ไม่ได้แปลว่าที่ผ่านมาคุณไม่พยายามมาโดยตลอด อย่าลืมที่จะขอบคุณตัวเองในทุก ๆ วันที่เติบโต เพราะไม่มีใครรู้ว่าที่ผ่านมานั้นยากลำบากแค่ไหนเท่าตัวคุณเอง'
+        },
+    }
+
+    let hor = localStorage.getItem('score_hor') ?? 0
+    let ver = localStorage.getItem('score_ver') ?? 0
+
+    if(hor >= 5) hor = 4
+    if(hor < 0) hor = 0
+    if(ver >= 3) ver = 2
+    if(ver < 0) ver = 0
+    let img = document.getElementById('character')
+    let view_name = document.getElementById('view_name')
+    let header_en = document.getElementById('header_en')
+    let header_th = document.getElementById('header_th')
+    let desc = document.getElementById('desc')
+    let share = document.getElementById('share')
+
+    let mytree = dict[characters_table[ver][hor]]
+    console.log(mytree);
+    share.href = "./assets/share/" + mytree?.name + ".jpg"
+    img.src = "./assets/object/" + mytree?.name + ".PNG"
+    view_name.innerHTML = mytree?.view_name
+    header_en.innerHTML = mytree?.header_en
+    header_th.innerHTML = mytree?.header_th
+    desc.innerHTML = mytree?.desc
+
+    
+    function nextPage(){
+        parent.postMessage('reset','*')
+        window.location.href = "./master.html"
+    }
+</script>
