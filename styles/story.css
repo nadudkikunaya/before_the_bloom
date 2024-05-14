@@ -73,7 +73,7 @@
     z-index: 2;
     overflow: hidden;
     object-fit: cover;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .custom-aspect-ratio-transition2 {  
