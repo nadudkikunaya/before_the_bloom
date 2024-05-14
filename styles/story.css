@@ -35,6 +35,18 @@
     text-wrap: balance;
 }
 
+.text3{
+    font-family: 'Mitr';
+    color: white;
+    line-height: normal;
+    font-size: 0.9vw;
+    /* font-weight: 100; */
+    margin-top: 0;
+    margin-bottom: 0;
+    text-wrap: balance;
+
+}
+
 .bold2 {
     font-weight: 800;
     text-decoration: underline;
@@ -270,4 +282,13 @@
     z-index: 10;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+.last-quote {
+    position: absolute;
+    aspect-ratio: 16/7.2;
+    width: 100%;
+    max-height: 100vh;
+    /* background-color: red; */
+    align-content: center;
 }
