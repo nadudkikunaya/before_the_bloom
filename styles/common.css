@@ -29,6 +29,8 @@ body {
     width: 100vw;
     height: 100vh; /* Ensure body fills the viewport height */
     max-height: 100vh;
+    padding: 0;
+    margin: 0;
     /* background-color: yellow; */
 }
 
@@ -103,7 +105,6 @@ body {
     /* height: 100vh; */
     visibility: hidden;
     display: none;
-    color: lightblue;
 }
 
 
@@ -122,23 +123,32 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    justify-content: center;
     text-align: center;
     align-content: start;
-    margin-top: 3vh;
+    margin-top: 3vw;
 }
 
 .align-middle{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     text-align: center;
-    margin: 25vw 0 25vw 0;
+    align-content: center;
 }
 
 .align-bottom{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 95%;
+    height: 100%;
+    justify-content: center;
     text-align: center;
     align-content: end;
-    justify-content: center;
+    margin-bottom: 3vw;
 }
 
