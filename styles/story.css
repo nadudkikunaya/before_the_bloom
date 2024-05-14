@@ -147,8 +147,8 @@
     text-wrap: balance;
     font-size: 1.2vw;
     /* width: 100%; */
-    line-height: 1.2vh;
-    margin-bottom: 0;
+    line-height: 1.2vw;
+    margin-bottom: 1vw;
 }
 
 .text-brown {
