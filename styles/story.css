@@ -74,6 +74,7 @@
     opacity: 0;
     z-index: 2;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .custom-aspect-ratio-transition2 {  
@@ -85,6 +86,7 @@
     z-index: 1;
     visibility: hidden;
     overflow: hidden;
+    object-fit: cover;
 
 }
 
