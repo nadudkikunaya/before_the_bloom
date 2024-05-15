@@ -4,7 +4,8 @@
     width: 100%;
     max-height: 100vh;
     transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
     opacity: 0;
     margin: 0;
     /* background-color: red; */
@@ -70,7 +71,8 @@
     aspect-ratio: 16/ 9;
     max-height: 100vh;
     transition: opacity 0.3s ;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
     opacity: 0;
     z-index: 2;
     overflow: hidden;
@@ -84,7 +86,8 @@
     width: 100%;
     max-height: 100vh;
     transition: opacity 0.3s ;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
     opacity: 1;
     z-index: 1;
     visibility: hidden;
@@ -226,7 +229,8 @@
     /* background-color: red; */
     opacity: 1;
     transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
 }
 
 .past-container {
@@ -259,7 +263,8 @@
     margin-left: 63vw;
     opacity: 0;
     transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
 }
 
 .past3 {
@@ -270,7 +275,8 @@
     margin-left: 2vw;
     opacity: 0;
     transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
 
 }
 
@@ -283,7 +289,8 @@
     margin-left: 65vw;
     opacity: 0;
     transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
 }
 
 .past5 {
@@ -295,7 +302,8 @@
     z-index: 10;
     opacity: 0;
     transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.3s;
 }
 
 .last-quote {
