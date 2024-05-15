@@ -95,7 +95,6 @@
 
 .question-set{
     width: 35%;
-    margin-left: 32.5vw; /* (100-width)/2 = 30vw */
 }
 
 .question {
@@ -134,7 +133,6 @@
     justify-content: center;
     background-color: rgba(221, 237, 255, 0.6);
     width: 20vw;
-    margin-left: 40vw; /* (100-width)/2 = 30vw */
     margin-bottom: 3vw;
     margin-top: 3vw;
     border-radius: 10px;
