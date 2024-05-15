@@ -268,7 +268,7 @@
         width: 32vw ;
         max-height: 100vh;
         margin-top: 2vw;
-        margin-left: 3vw;
+        margin-left: 0;
     
     }
     
@@ -277,7 +277,7 @@
         width: 32vw;
         max-height: 100vh;
         margin-top: 2vw;
-        margin-left: 58vw;
+        margin-left: 48vw;
         opacity: 0;
         transition: opacity 0.3s;
         -webkit-transition-property: opacity;
@@ -303,7 +303,7 @@
         width: 32vw;
         max-height: 100vh;
         margin-top: 23vw ;
-        margin-left: 60vw;
+        margin-left: 53vw;
         opacity: 0;
         transition: opacity 0.3s;
         -webkit-transition-property: opacity;
