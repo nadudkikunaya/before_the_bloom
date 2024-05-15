@@ -130,7 +130,7 @@
     }
     .text {
         font-family: 'Mitr';
-        color: red;
+        /* color: red; */
         line-height: normal;
         font-size: 1vw;
         margin-top: 0;
