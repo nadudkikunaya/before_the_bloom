@@ -5,7 +5,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh; /* Ensure body fills the viewport height */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: red; */
 }
 
@@ -14,7 +14,8 @@
     justify-content: space-between;
     margin-left: 4vw;
     margin-right: 4vw;
-    overflow: hidden;
+    /* overflow: hidden; */
+
 }
 
 
@@ -23,7 +24,7 @@
     aspect-ratio: 16/9;
     width: 100%;
     max-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -31,9 +32,11 @@
     text-align: center;
     align-content: center;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 15vw;
+    padding: 0 5vw 0vw 5vw;
+    /* width: 15vw; */
     margin-top: 5vw;
     margin-bottom: 3vw;
+    line-height: normal;
     border-radius: 10px;
     text-decoration: none;
     color: black;
@@ -45,32 +48,34 @@
     align-content: center;
     background-color: rgba(255, 255, 255, 1);
     cursor: pointer;
-    width: 15vw;
+    padding: 0 5vw 0vw 5vw;
+    /* width: 15vw; */
     margin-top: 5vw;
     margin-bottom: 3vw;
     border-radius: 10px;
     text-decoration: none;
     color: black;
+    line-height: normal;
 }
 
 
 
 .button-set2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     /* background-color: yellow; */
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
+    /* margin-left: 25%; */
+    /* background-color: red; */
 }
 
 .custom-button2 {
     text-align: center;
     align-content: center;
     background-color: rgba(253, 221, 129, 0.65);
-    width: 10vw;
-    height: 4vw;
-    /* margin-top: 5vw;
-    margin-bottom: 3vw; */
+    padding: 2vw 4vw 2vw 4vw;
+
+    margin: 0 1vw 0 1vw;
     border-radius: 10px;
     text-decoration: none;
     color: black;
@@ -81,10 +86,9 @@
     align-content: center;
     background-color: rgba(253, 221, 129, 1);
     cursor: pointer;
-    width: 10vw;
-    height: 4vw;
-    /* margin-top: 5vw;
-    margin-bottom: 3vw; */
+    padding: 2vw 4vw 2vw 4vw;
+
+    margin: 0 1vw 0 1vw;
     border-radius: 10px;
     text-decoration: none;
     color: black;
@@ -148,27 +152,27 @@
 
 .text-size1{
     font-family: 'Mitr';
-    font-size: 1.2vw;
-    line-height: 1vw;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
 }
 
 .text-size2{
     font-family: 'Mitr';
-    font-size: 2.6vw;
-    font-weight: 900;
+    font-size: 3vw;
+    font-weight: 500;
     line-height: 5vw;
 }
 
 .text-size3{
     font-family: 'Mitr';
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     font-weight: 600;
     line-height: 1vw;
 }
 
 .text-size4{
     font-family: 'Mitr';
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     line-height: 2vw;
     text-wrap: wrap;
     margin-left: 20%;
@@ -178,7 +182,8 @@
 
 .text-size5{
     font-family: 'Mitr';
-    font-size: 1.2vw;
+    font-size: 1.5vw;
+    font-weight: 500;
     line-height: 2vw;
     /* background-color: yellow; */
 }
@@ -194,9 +199,18 @@
 .margin-t-1{
     margin-top: 5vw;
 }
+
+.margin-t-3{
+    margin-top: 2vw;
+}
+
+.margin-t-2{
+    margin-top: 3vw;
+}
 .margin-0{
     margin: 0;
 }
+
 
 .box-split{
     width: 100%;
