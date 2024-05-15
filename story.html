@@ -515,6 +515,13 @@
 
     let body = document.getElementsByTagName("body")[0]
 
+    let all_text = document.getElementsByTagName('p')
+    let name = localStorage.getItem('name')
+        for(let i = 0 ; i < all_text.length ; i++){
+            string = all_text[i].innerHTML
+            all_text[i].innerHTML = string.replaceAll(/&lt;&gt;/g, name ?? 'น้องต้นไม้')
+        }
+
 
 
     
@@ -531,12 +538,6 @@
 
             if (loadedResourcesCount === preloadLinks.length) {
                 
-                    let all_text = document.getElementsByTagName('p')
-                    let name = localStorage.getItem('name')
-                    for(let i = 0 ; i < all_text.length ; i++){
-                        string = all_text[i].innerHTML
-                        all_text[i].innerHTML = string.replace(/&lt;&gt;/g, name ?? 'น้องต้นไม้')
-                    }
                     //start transition first time
                     image.style.opacity = 1
                     text_container.style.opacity = 1;

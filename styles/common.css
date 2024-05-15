@@ -10,6 +10,9 @@
     100% { background-color: black; }
   }
 
+
+
+
 body {
     background-color: black;
     margin: 0;
@@ -111,11 +114,11 @@ body {
 
 
 .pb-2 {
-    padding-bottom: 2vh;
+    padding-bottom: 2vw;
 }
 
 .pb-10{
-    margin-bottom: 10vh;
+    margin-bottom: 10vw;
 }
 
 

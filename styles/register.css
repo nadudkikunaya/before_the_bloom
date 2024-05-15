@@ -107,3 +107,18 @@
     text-align: center;
     color: black;
   }
+
+
+.margin-register {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .margin-register {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    
+    }
+}
