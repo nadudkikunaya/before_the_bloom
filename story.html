@@ -588,11 +588,11 @@
         if(changeImage) {
             // image.style.filter = 'blur(10px) opacity(0.2)'
             body.style.cursor = 'wait'
-            image.style.visibility = 'hidden'
-            image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png")
             image.style.zIndex = 1
             image2.style.zIndex = 2
-            image.style.visibility = 'visible'
+            // image.style.visibility = 'hidden'
+            image.src = "./assets/scenes/scene" + curScene + (curScene === 13 ? ".GIF" : ".png")
+            // image.style.visibility = 'visible'
 
 
         }

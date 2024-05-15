@@ -40,6 +40,11 @@
                 audio.load()
                 audio.play()
             }
+
+            if(event?.data === "play"){
+                audio.play()
+            }
+
             if(event?.data === "reset"){
                 let src = document.getElementById('sound_src')
                 sound++;

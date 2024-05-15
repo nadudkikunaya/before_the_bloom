@@ -90,7 +90,7 @@
     -webkit-transition-duration: 0.3s;
     opacity: 1;
     z-index: 1;
-    visibility: hidden;
+    /* visibility: hidden; */
     overflow: hidden;
     object-fit: cover;
     /* background-color: aqua; */
