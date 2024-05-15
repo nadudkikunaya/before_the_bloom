@@ -117,8 +117,21 @@
 
 @media only screen and (max-width: 600px) {
     .margin-register {
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
     
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .text {
+        font-family: 'Mitr';
+        color: black;
+        line-height: normal;
+        font-size: 0.8vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-wrap: balance;
+        /* background-color: blue; */
     }
 }
