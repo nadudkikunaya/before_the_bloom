@@ -4,7 +4,7 @@
     text-align: center;
     /* background-color: white; */
     max-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -69,7 +69,6 @@
 
 .stroke2 {
     position: absolute;
-    line-height: 0;
     font-size: calc(4vw);
     line-height: normal;
     margin-top: 0;
@@ -86,7 +85,6 @@
 }
 
 .subtitle{
-    line-height: 0;
     font-size: calc(4vw);
     line-height: normal;
     margin-top: 0;
