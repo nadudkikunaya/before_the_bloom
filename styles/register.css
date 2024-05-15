@@ -4,6 +4,7 @@
     max-height: 100vh;
     text-align: center;
     transition: opacity 0.5s;
+    -webkit-transition: transform 0.5s;
     opacity: 0;
     margin: 0;
     overflow: hidden;
