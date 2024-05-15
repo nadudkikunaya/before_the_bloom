@@ -5,5 +5,5 @@ function buttonScene1() {
   title.style.visibility = "hidden";
   button.style.visibility = "hidden";
 
-  transitionToPage("./register_scene.html");
+  transitionToPage("./story.html");
 }
