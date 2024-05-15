@@ -41,7 +41,7 @@
                     <p class="text align-bottom">แต่เส้นทางในป่าต้องมนต์นั้นก็มีอุปสรรคมากมาย<br>ที่ทำให้ไม่ใช่ทุกคนจะสามารถเป็นพืชพิเศษกันได้ง่าย ๆ</p>
                 </div>
                 <div id="tab8" class="tab-content">
-                    <p class="text align-bottom">พืชตนหนึ่งที่อาศัยอยู่ในเมืองพืชแห่งนั้น<br>เขาคือพืชที่ก็ได้ฟังเรื่องราวที่เล่าขานนั้นมาตั้งแต่เล็กจนโต</p>
+                    <p class="text align-bottom">&lt;&gt; พืชตนหนึ่งที่อาศัยอยู่ในเมืองพืชแห่งนั้น<br>เขาคือพืชที่ก็ได้ฟังเรื่องราวที่เล่าขานนั้นมาตั้งแต่เล็กจนโต</p>
                 </div>
                 <div id="tab9" class="tab-content">
                     <p class="text align-bottom">รวมถึงได้เห็นพืชพิเศษที่ได้รับการยกย่องและชื่นชมจากพืชตนอื่นมากมาย<br>เขาเองจึงมีเป้าหมายที่อยากจะเป็นพืชพิเศษเช่นกัน</p>
@@ -330,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="tab61" class="tab-content align-top"></div>
+                <div id="tab61" class="tab-content"></div>
                 <div id="tab62" class="tab-content">
                     <p class="text align-top">&lt;&gt;หันกลับมามองแล้วพบว่าเงานั้นไม่ได้มีอยู่จริง</p>
                 </div>
@@ -391,8 +391,6 @@
 
                     <div class="past-container">
                         <img class="past1" src="./assets/object/past1.png" alt="">
-
-
                     </div>
                     <div class="align-bottom-with-past align-bottom">
                         <p class="text">ตั้งแต่จุดเริ่มต้นของการเดินทาง</p>
@@ -441,7 +439,7 @@
                     </div>
                 </div>
                 <div id="tab83" class="tab-content">
-                    <p class="text align-bottom"></p>
+                    <p class="text"></p>
                 </div>
                 <div id="tab84" class="tab-content">
                     <p class="text align-bottom">&lt;&gt;คิดย้อนเรื่องราวทั้งหมดและได้สติขึ้นมา จึงว่ายน้ำขึ้นไปที่ฝั่งโดยเร็ว</p>
@@ -674,6 +672,16 @@
         setTimeout(() => {
             text_container.style.opacity = 1
             body.style.cursor = 'default'
+
+
+            //auto
+            setTimeout(() => {
+                if([0,60,82].includes(curTab)){
+                    nextTab(1)
+                }
+            },1500)
+
+
         }, 500);
     });
 
