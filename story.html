@@ -392,18 +392,17 @@
                     <div class="past-container">
                         <img class="past1" src="./assets/object/past1.png" alt="">
                     </div>
-                    <div class="align-bottom-with-past align-bottom">
-                        <p class="text">ตั้งแต่จุดเริ่มต้นของการเดินทาง</p>
-                    </div>
+                        <div class="align-bottom-with-past" >
+                                <p class="text">ตั้งแต่จุดเริ่มต้นของการเดินทาง</p>
+                        </div>
                 </div>
                 <div id="tab79" class="tab-content">
+
                     <div class="past-container">
-                        <div>
                         <img class="past1" src="./assets/object/past1.png" alt="">
                         <img class="past2" src="./assets/object/past2.png" alt="">
-                        </div>
                     </div>
-                    <div class="align-bottom-with-past align-bottom">
+                    <div class="align-bottom-with-past">
                         <p class="text">ช่วงเวลาดี ๆ และสิ่งดี ๆ ที่เกิดขึ้น</p>
                     </div>
                 </div>
@@ -411,9 +410,11 @@
                     <div class="past-container">
                         <img class="past1" src="./assets/object/past1.png" alt="">
                         <img class="past2" src="./assets/object/past2.png" alt="">
+                    </div>
+                    <div class="past-container">
                         <img class="past3" src="./assets/object/past3.png" alt="">
                     </div>
-                    <div class="align-bottom-with-past align-bottom">
+                    <div class="align-bottom-with-past">
                         <p class="text">เส้นทางที่แม้จะยากลำบาก แต่ก็สวยงาม</p>
                     </div>
                 </div>
@@ -421,22 +422,26 @@
                     <div class="past-container">
                         <img class="past1" src="./assets/object/past1.png" alt="">
                         <img class="past2" src="./assets/object/past2.png" alt="">
+                    </div>
+                    <div class="past-container">
                         <img class="past3" src="./assets/object/past3.png" alt="">
                         <img class="past4" src="./assets/object/past4.png" alt="">
                     </div>
-                    <div class="align-bottom-with-past align-bottom">
+                    <div class="align-bottom-with-past">
                         <p class="text">อุปสรรคมากมายที่ได้พบเจอและได้ฝ่าฟันผ่านมา</p>
                     </div>
                 </div>
                 <div id="tab82" class="tab-content">
                     <div class="past-container">
-                    <img class="past1" src="./assets/object/past1.png" alt="">
-                    <img class="past2" src="./assets/object/past2.png" alt="">
-                    <img class="past3" src="./assets/object/past3.png" alt="">
-                    <img class="past4" src="./assets/object/past4.png" alt="">
-                    <img class="past5" src="./assets/object/past5.png" alt=""> 
+                        <img class="past1" src="./assets/object/past1.png" alt="">
+                        <img class="past2" src="./assets/object/past2.png" alt="">
                     </div>
-                    <div class="align-bottom-with-past align-bottom">
+                    <div class="past-container">
+                        <img class="past3" src="./assets/object/past3.png" alt="">
+                        <img class="past4" src="./assets/object/past4.png" alt="">
+                    </div>
+                    <img class="past5" src="./assets/object/past5.png" alt=""> 
+                    <div class="align-bottom-with-past">
                         <p class="text">รวมถึงการที่ได้เผชิญหน้ากับสิ่งที่ตัวเองกลัว</p>
                     </div>
                 </div>
@@ -508,7 +513,7 @@
     let image2 = document.getElementById('scene2')
     
     // tab
-    let curTab = 77 //default 0
+    let curTab = 76 //default 0
     let tabs = document.getElementsByClassName("tab-content")
     let firstTab = tabs[curTab]
     firstTab.style.visibility = "visible"
@@ -559,10 +564,10 @@
             console.log(pastNo);
             let past = document.getElementsByClassName('past'+pastNo)
             let bottomWpast = document.getElementsByClassName('align-bottom-with-past')
-            // if(nextPage>= 1){
+            if(nextPage>= 1){
             image.style.opacity -= 0.2
             image2.style.opacity -= 0.2
-            // }
+            }
             bottomWpast[pastNo-2].style.opacity = 0
             for(let i = 0 ; i < past.length ; i++){
                 setTimeout(() => {

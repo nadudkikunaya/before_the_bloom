@@ -132,7 +132,7 @@
         font-family: 'Mitr';
         /* color: red; */
         line-height: normal;
-        font-size: 1vw;
+        font-size: 1.3vw;
         margin-top: 0;
         margin-bottom: 0;
         text-wrap: balance;
@@ -142,13 +142,13 @@
         font-family: 'Mitr';
         color: black;
         line-height: normal;
-        font-size: 0.9vw;
+        font-size: 1.1vw;
         margin-top: 0;
         margin-bottom: 0;
         text-wrap: balance;
     }
     .icon-object {
-        width: 8vw;
-        height: 8vw;
+        width: 9vw;
+        height: 9vw;
     }
 }
