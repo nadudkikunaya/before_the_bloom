@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/story.css">
@@ -558,8 +558,8 @@
             let past = document.getElementsByClassName('past'+pastNo)
             let bottomWpast = document.getElementsByClassName('align-bottom-with-past')
             // if(nextPage>= 1){
-            // image.style.opacity -= 0.2
-            // image2.style.opacity -= 0.2
+            image.style.opacity -= 0.2
+            image2.style.opacity -= 0.2
             // }
             bottomWpast[pastNo-2].style.opacity = 0
             for(let i = 0 ; i < past.length ; i++){
