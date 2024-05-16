@@ -12,11 +12,6 @@
 
 
 
-  html {
-    padding: env(safe-area-inset);
-  }
-
-
 body {
     background-color: black;
     margin: 0;
