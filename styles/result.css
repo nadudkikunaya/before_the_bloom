@@ -353,6 +353,7 @@ body {
     margin: 0;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease-in-out;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: 0.8s;
     -webkit-animation-name: whiteToBlack;  
