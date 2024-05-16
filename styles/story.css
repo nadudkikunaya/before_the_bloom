@@ -334,7 +334,9 @@
     text-align: center;
     align-content: end;
 }
-@media screen and (orientation: landscape) and (max-width: 960px) and (max-height: 450px) {
+
+
+/* @media screen and (orientation: landscape) and (max-width: 960px) and (max-height: 450px) {
     
 .past1 {
     position: absolute;
@@ -396,4 +398,4 @@
     -webkit-transition-duration: 0.3s;
 }
 
-}
+} */
