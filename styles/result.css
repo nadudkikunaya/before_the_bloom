@@ -42,6 +42,7 @@
     margin-top: 5vw;
     margin-bottom: 3vw;
     border-radius: 10px;
+    text-decoration: none;
     color: black;
 }
 
@@ -57,6 +58,7 @@
     margin-top: 5vw;
     margin-bottom: 3vw;
     border-radius: 10px;
+    text-decoration: none;
     color: black;
 }
 
@@ -67,11 +69,12 @@
         align-items: center;
         display: flex;
         background-color: rgba(255, 255, 255, 0.7);
-        padding: 0 2vw 0vw 2vw;
-        /* width: 15vw; */
+        /* padding: 0 2vw 0vw 2vw; */
+        width: 15vw;
         margin-top: 5vw;
         margin-bottom: 3vw;
         border-radius: 10px;
+        text-decoration: none;
         color: black;
     }
     
@@ -82,11 +85,12 @@
         display: flex;
         background-color: rgba(255, 255, 255, 1);
         cursor: pointer;
-        padding: 0 2vw 0vw 2vw;
-        /* width: 15vw; */
+        /* padding: 0 2vw 0vw 2vw; */
+        width: 15vw;
         margin-top: 5vw;
         margin-bottom: 3vw;
         border-radius: 10px;
+        text-decoration: none;
         color: black;
     }
     
