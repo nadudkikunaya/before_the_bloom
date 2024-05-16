@@ -252,10 +252,10 @@
     position: absolute;
     aspect-ratio: 16/9;
     width: 100%;
-    /* background-color: yellow; */
+    background-color: yellow;
     max-height: 100vh;
     z-index: 10;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
