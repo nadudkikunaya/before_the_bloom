@@ -501,12 +501,12 @@
 
     //scene
     let curScene = 3 //default 3 
-    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,43,44,46,47,48,50,52,56,57,59,62,63,65,67,70,71,72,73,74,81,84,85,89] // tab n-1
+    let sceneCritical = [3,6,7,8,11,16,18,22,24,28,31,37,38,40,41,43,44,46,47,48,50,52,56,57,59,62,63,65,67,68,69,70,71,72,73,74,81,84,85,89] // tab n-1
     let image = document.getElementById("scene");
     let image2 = document.getElementById('scene2')
     
     // tab
-    let curTab = 0 //default 0
+    let curTab = 77 //default 0
     let tabs = document.getElementsByClassName("tab-content")
     let firstTab = tabs[curTab]
     firstTab.style.visibility = "visible"
@@ -557,10 +557,10 @@
             console.log(pastNo);
             let past = document.getElementsByClassName('past'+pastNo)
             let bottomWpast = document.getElementsByClassName('align-bottom-with-past')
-            if(nextPage>= 1){
-            image.style.opacity -= 0.2
-            image2.style.opacity -= 0.2
-            }
+            // if(nextPage>= 1){
+            // image.style.opacity -= 0.2
+            // image2.style.opacity -= 0.2
+            // }
             bottomWpast[pastNo-2].style.opacity = 0
             for(let i = 0 ; i < past.length ; i++){
                 setTimeout(() => {
