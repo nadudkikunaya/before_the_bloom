@@ -11,7 +11,11 @@
     <link href="https://db.onlinewebfonts.com/c/6677a36541e322426d7d530f16424537?family=Silk+Flower+Demo" rel="stylesheet">
     <script type="text/javascript" src="./script/common.js"></script>
     <script type="text/javascript" src="./script/master.js"></script>
+
+
     <title>Before The Bloom</title>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -27,15 +31,39 @@
             <button class="button-custom" onclick="buttonScene1()">เข้าสู่เนื้อเรื่อง</button>
         </div>
     </div>
-    
-    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+        import { getFirestore, doc, collection, updateDoc, getDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAUHm_6eZjwtVahdlFPtOo31d_EpduKuJI",
+          authDomain: "beforethebloom-242d3.firebaseapp.com",
+          projectId: "beforethebloom-242d3",
+          storageBucket: "beforethebloom-242d3.appspot.com",
+          messagingSenderId: "661155847899",
+          appId: "1:661155847899:web:3ce685e1c160d5b15ff6fe"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore();
+        const docRef = doc(collection(db, 'viewers'), '7CvlZdbFp2Ix9KZwj62m');
+        await updateDoc(docRef, {
+          viewer: increment(1)
+        });
+</script>
 </body>
 </html>
+
+
 
 <script>
     localStorage.setItem("score_hor", 0);
 localStorage.setItem("score_ver", 0);
 localStorage.setItem("name", null);
-
 </script>
 
